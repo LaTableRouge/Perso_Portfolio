@@ -1,279 +1,341 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-  <title>Global</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="HTML5 website template">
-  <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
-  <link rel="stylesheet" href="assets/css/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Victor DIANA's Portfolio</title>
+    <meta name="description" content="Victor DIANA's Portfolio">
+    <meta name="keywords" content="agency, bootstrap, business, company, corporate, creative, clean, modern, multipurpose, onepage, personal, portfolio, professional, responsive, minimal">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+
+    <!-- Web fonts/Icons -->
+    <link rel="stylesheet" href="assets/fonts/opensans/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/font-awesome.min.css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/js/lib/swiper.min.css">
+    <link rel="stylesheet" href="assets/js/lib/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="assets/js/lib/vegas/vegas.min.css">
+
+    <!-- Main CSS files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
 </head>
-<body>
 
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <img src="assets/img/logo.png" alt="Global">
-    <p>Global</p>
-  </a>
-  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
-</div>
+<body id="menu" class="body-page">
+<!--[if lt IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Global">
-            <p>Global</p>
-          </a>
-          <button class="header--cta cta">Hire Us</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
-            <li><span>Works</span></li>
-            <li><span>About</span></li>
-            <li><span>Contact</span></li>
-            <li><span>Hire us</span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="intro--banner">
-                <h1>Your next<br>interactive<br>experience</h1>
-                <button class="cta">Hire Us
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button>
-                <img src="assets/img/introduction-visual.png" alt="Welcome">
-              </div>
-              <div class="intro--options">
-                <a href="#0">
-                  <h3>Metiew &amp; Smith</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                <a href="#0">
-                  <h3>Fantasy interactive</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                <a href="#0">
-                  <h3>Paul &amp; shark</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>Selected work</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-victory.jpg" alt="Victory">
-                      </div>
-                      <p class="slider--item-title">Victory</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
-                      </div>
-                      <p class="slider--item-title">Metiew &amp; Smith</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">Alex Nowak</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <h2>We<br>believe in<br>passionate<br>people</h2>
-                <a href="#0">Career
-                  <span>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                    </g>
-                    </svg>
-                  </span>
-                </a>
-                <img src="assets/img/about-visual.png" alt="About Us">
-              </div>
-              <div class="about--options">
-                <a href="#0">
-                  <h3>Winners</h3>
-                </a>
-                <a href="#0">
-                  <h3>Philosophy</h3>
-                </a>
-                <a href="#0">
-                  <h3>History</h3>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="contact">
-              <div class="contact--lockup">
-                <div class="modal">
-                  <div class="modal--information">
-                    <p>Pawia 5, 31-154 Kraków, Poland</p>
-                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
-                    <a href="tel:+148126287560">+48 12 628 75 60</a>
-                  </div>
-                  <ul class="modal--options">
-                    <li><a href="#0">Bēhance</a></li>
-                    <li><a href="#0">dribbble</a></li>
-                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="hire">
-              <h2>You want us to do</h2>
-              <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
-                <div class="work-request--options">
-                  <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design">
-                    <label for="opt-1">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      App Design
-                    </label>
-                    <input id="opt-2" type="checkbox" value="graphic design">
-                    <label for="opt-2">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Graphic Design
-                    </label>
-                    <input id="opt-3" type="checkbox" value="motion design">
-                    <label for="opt-3">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Motion Design
-                    </label>
-                  </span>
-                  <span class="options-b">
-                    <input id="opt-4" type="checkbox" value="ux design">
-                    <label for="opt-4">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      UX Design
-                    </label>
-                    <input id="opt-5" type="checkbox" value="webdesign">
-                    <label for="opt-5">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Webdesign
-                    </label>
-                    <input id="opt-6" type="checkbox" value="marketing">
-                    <label for="opt-6">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Marketing
-                    </label>
-                  </span>
-                </div>
-                <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-                <input type="submit" value="Send Request">
-              </form>
-            </div>
-          </li>
-        </ul>
-      </div>
+<!-- Page Loader -->
+<div class="pageloader" id="pageloader">
+    <div>
+        <div class="icon ion-spin"></div>
     </div>
-  </div>
-  <ul class="outer-nav">
-    <li class="is-active">Home</li>
-    <li>Works</li>
-    <li>About</li>
-    <li>Contact</li>
-    <li>Hire us</li>
-  </ul>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
+<!-- Start Header -->
+<header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
+    <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+        <span class="menu-icon menu-icon-random">
+        <span class="bars">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </span>
+      </span>
+    </button>
+
+    <a class="navbar-brand" href="#home">
+      <span class="logo">
+        <img class="light-logo" src="assets/img/logo-white.png" alt="Logo">
+      </span>
+    </a>
+
+    <div class="all-menu-wrapper" id="navbarMenu">
+        <nav class="navbar-mainmenu">
+            <ul class="navbar-nav mr-auto mr-auto-my">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html#home">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="item.html">Item</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="navbar-sidebar ">
+            <ul class="social">
+                <li>
+                    <a href="https://www.linkedin.com/in/victor-diana-409268101/">
+                        <i class="icon fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/MLNOP">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/mlnopyep/">
+                        <i class="icon fa fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Start Cover -->
+<div class="page-cover">
+    <div class="cover-bg-mask bg-color" data-bgcolor="#1D1D1D" style="background-color: rgb(29, 29, 29);"></div>
+</div>
+<!--End Cover -->
+
+<!-- Start Content -->
+<main class="page-main page-fullpage main-anim" id="mainpage">
+    <!-- Start Home -->
+    <div class="section section-home fullscreen-md fp-auto-height-responsive main-home" data-section="home">
+        <div class="section-wrapper center-vh dir-col anim">
+            <div class="section-content reduced text-center">
+                <div class="row">
+                    <div class="col-12 col-md-12 text-center">
+                        <div class="title-desc">
+                            <h2 class="display-4 display-title home-title anim-1">Victor DIANA</h2>
+                            <h4 class="anim-2 opacity-75">Web developer</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">About Me</span>
+                </a>
+            </footer>
+        </div>
+    </div>
+    <!-- End Home -->
+
+    <!-- Start About -->
+    <div class="section section-description fp-auto-height-responsive about-section" data-section="about">
+        <div class="section-wrapper center-vh dir-col anim">
+            <div class="section-title text-center">
+                <h2 class="display-4 display-title anim-2 mb-32">About Me</h2>
+            </div>
+            <div class="item row justify-content-between fade-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="section-content reduced">
+                        <div class="media">
+                            <div class="media-body">
+                                <h4>English</h4>
+                                <i class="icon icon ion-code-working"></i>
+                                <p>After graduating Advanced technician in Software solution and business application in 2018 I specialized in Web development.
+                                    Fascinated by music and new discoveries in computing, I benefited from professional experiences in various environments thanks to the different internships I did during my trainings.
+                                    I have a particular interest in web design and web integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="section-content reduced">
+                        <div class="media">
+                            <div class="media-body">
+                                <h4>French</h4>
+                                <i class="icon icon ion-code-working"></i>
+                                <p>Après avoir obtenu mon diplôme de technicien supérieur en solution logicielle et application métier en 2018, je me suis spécialisé en développement Web.
+                                    Passionné par la musique et les nouvelles découvertes informatiques, j'ai profité d'expériences professionnelles dans des environnements variés grâce aux différents stages effectués lors de mes formations.
+                                    J'ai un intérêt particulier pour la conception et l'intégration Web.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                         
+
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Projects</span>
+                </a>
+            </footer>
+        </div>
+    </div>
+    <!-- End About -->
+
+
+    <!-- Start Projects -->
+    <div class="section section-twoside fp-auto-height-responsive " data-section="projects">
+        <div class="section-wrapper twoside dir-col anim">
+            <div class="section-title center-vh  dir-col text-center">
+                <h2 class="display-4 display-title anim-2 mb-32">Projects</h2>
+            </div>
+
+            <div class="slider-wrapper carousel-swiper-beta fade-1 carousel-smalls carousel-swiper-beta-demo">
+                <div class="slider-container swiper-container">
+                    <ul class="item-list swiper-wrapper">
+                        <li class="slide-item swiper-slide">
+                            <div class="item-wrapper">
+                                <div class="illustr">
+                                    <img src="http://via.placeholder.com/1920x2275"
+                                         alt="Image" class="img">
+                                </div>
+                                <a class="legend" href="item.html#project_url">
+                                    <h2 class="display-4">setec international</h2>
+                                    <p>site full recast</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slide-item swiper-slide">
+                            <div class="item-wrapper">
+                                <div class="illustr">
+                                    <img src="http://via.placeholder.com/1920x2275"
+                                         alt="Image" class="img">
+                                </div>
+                                <a class="legend" href="item.html#project_url">
+                                    <h2 class="display-4">Promogoose</h2>
+                                    <p>school project</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slide-item swiper-slide">
+                            <div class="item-wrapper">
+                                <div class="illustr">
+                                    <img src="http://via.placeholder.com/1920x2275"
+                                         alt="Image" class="img">
+                                </div>
+                                <a class="legend" href="item.html#project_url">
+                                    <h2 class="display-4">Espace Charpente</h2>
+                                    <p>site full recast</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="items-pagination bar"></div>
+            </div>
+
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Contact Me</span>
+                </a>
+            </footer>
+        </div>
+    </div>
+    <!-- End Projects -->
+
+
+    <!-- Start Contact -->
+    <div class="section section-contact fp-auto-height-responsive no-slide-arrows " data-section="contact">
+        <div class="section-wrapper center-vh dir-col anim">
+            <div class="section-title text-center">
+                <h2 class="display-4 display-title">Contact Me</h2>
+                <!-- <p>Need Help? Don't Forget to Contact With Us</p> -->
+            </div>
+
+            <div class="section-content reduced">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-7 text-left contact-left">
+                        <form class="send_message_form message form" method="post" action="#" id="message_form">
+                            <div class="form-group name">
+                                <label for="mes-name">Name</label>
+                                <input id="mes-name" name="name" type="text" placeholder=""
+                                       class="form-control-line form-success-clean" required>
+                            </div>
+                            <div class="form-group email">
+                                <label for="mes-email">Email</label>
+                                <input id="mes-email" type="email" placeholder="" name="email"
+                                       class="form-control-line form-success-clean" required>
+                            </div>
+                            <div class="form-group no-border">
+                                <label for="mes-text">Message</label>
+                                <textarea id="mes-text" name="message"
+                                          class="form-control form-control-outline thick form-success-clean"
+                                          required></textarea>
+                                <div>
+                                    <p class="message-ok invisible form-text-feedback form-success-visible">Your message
+                                        has been sent, thank you.</p>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button id="submit-message" class="btn btn-outline-white btn-full email_b"
+                                        name="submit_message">
+                                    <i class="icon ion-email mr-2"></i>
+                                    <span class="txt">Send</span>
+                                    <span class="arrow-icon"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-5 text-left contact-right">
+                        <img src="assets/img/phone-icon.png" alt="">
+                        <div>
+                            <h4>Address</h4>
+                            <p>Quartier la montauronne</p>
+                            <p>13790, Rousset, FRANCE</p>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+33 6 49 98 99 29</p>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>victordianamlnop@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact -->
+
+</main>
+<!-- End Content -->
+
+<!-- Start Footer -->
+<footer id="site-footer" class="page-footer">
+    <!-- Left content -->
+    <div class="footer-left">
+        <a href="tel:+33649989929" class="opacity-75"><i class="icon ion-android-call"></i>+33 6 49 98 99 29</a>
+        <a href="mailto:victordianamlnop@gmail.com" class="opacity-75"><i class="icon ion-email"></i>victordianamlnop@gmail.com</a>
+    </div>
+
+    <!-- Right content -->
+    <div class="footer-right">
+        <a href="assets/pdf/C.V. DIANA Victor.pdf">
+            <p class="note">Download my resume
+                <i class="icon fa fa-download"></i>
+            </p>
+        </a>
+    </div>
+</footer>
+<!-- End Footer  -->
+
+<!-- Scripts -->
+<script src="assets/js/lib/jquery-1.12.4.min.js"></script>
+<script src="assets/js/lib/scrolloverflow.min.js"></script>
+<script src="assets/js/lib/all.js"></script>
+<script src="assets/js/lib/particlejs/particles.min.js"></script>
+<script src="assets/js/slideshow/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/slideshow/TweenMax.min.js"></script>
+<script src="assets/js/slideshow/charming.min.js"></script>
+<script src="assets/js/slideshow/demo.js"></script>
+
+<!-- Main Script files -->
+<script src="assets/js/custom.js"></script>
 </body>
 </html>

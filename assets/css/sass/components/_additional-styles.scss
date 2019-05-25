@@ -1,0 +1,73 @@
+.about-description {
+    padding: 15px;
+    top: -130px;
+    background: rgba(27, 27, 27, 0.8);
+    background: rgba(27, 27, 27, 0.8);
+}
+.about-description p {
+    margin: 0;
+}
+.about-section .mission-border {
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
+.about-section .shadow {
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+.services .media {
+    margin-bottom: 25px;
+}
+.services .media h4 {
+}
+
+.section-subscribe img {
+    position: absolute;
+    right: -10%;
+    top: -15vh;
+    width: 50%;
+    opacity: 0.1;
+}
+
+.contact-left {
+    padding-left: 10%;
+}
+
+.contact-right p {
+    margin: 0;
+}
+
+.contact-right div {
+    margin-top: 20px;
+}
+
+.contact-right img {
+    position: absolute;
+    left: -20px;
+    top: 30px;
+    opacity: 0.12;
+    width: 80%;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+.mr-auto-my {
+    margin: 0 auto;
+}
+.padding-none {
+    padding: 0;
+}
+
+.item-buttons .item-buttons-purchase {
+    padding: 0;
+    text-align: left;
+}
+
+.item-buttons .item-buttons-next {
+    padding: 0;
+    text-align: center;
+}
+
+.opacity-75 {
+    opacity: 0.75 !important;
+}

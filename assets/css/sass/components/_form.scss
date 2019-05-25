@@ -1,0 +1,521 @@
+.form-content-transparent {
+    background: none;
+    border-radius: 8px;
+}
+form label{
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .form-content-transparent {
+        padding: 1rem 2rem;
+    }
+}
+
+.form-content-transparent.shadow {
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+
+.form-content-transparent .avatar {
+    margin: 32px auto;
+    display: block;
+    width: 136px;
+    height: 136px;
+    border-radius: 400px;
+    border: 8px solid #3346d1;
+    position: relative;
+}
+
+.form-content-transparent .avatar .img-box {
+    overflow: hidden;
+    border-radius: 400px;
+}
+
+.form-content-transparent .avatar img {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.form-content-transparent .avatar:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    border-radius: 400px;
+    top: -16px;
+    left: -16px;
+    width: 152px;
+    height: 152px;
+    background: rgba(209, 51, 91, 0.2);
+}
+
+.form-content-transparent .avatar:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    border-radius: 400px;
+    top: -24px;
+    left: -24px;
+    width: 168px;
+    height: 168px;
+    background: rgba(209, 51, 91, 0.1);
+}
+
+.form-content-transparent .form-desc p {
+    opacity: 1;
+}
+
+.form-content-transparent .form-input {
+    text-align: left;
+}
+
+.form-content-transparent .form-input label {
+    font-size: 0.75rem;
+    color: #3346d1;
+    font-weight: bold;
+}
+
+.form-content-transparent .form-input .line {
+    margin-bottom: 1rem;
+}
+
+.form-content-transparent .form-input .btn-full {
+    width: 100%;
+}
+
+.form-content-transparent.form-content-primary {
+    color: currentColor;
+}
+
+.form-content-transparent.form-content-primary .avatar {
+    border: 8px solid #3346d1;
+}
+
+.form-content-transparent.form-content-primary .avatar:before {
+    background: rgba(209, 51, 91, 0.2);
+}
+
+.form-content-transparent.form-content-primary .avatar:after {
+    background: rgba(209, 51, 91, 0.1);
+}
+
+.form-content-transparent.form-content-primary .form-desc h4 {
+    color: #3346d1;
+}
+
+.form-content-transparent.form-content-primary .form-input label {
+    color: #3346d1;
+}
+
+.form-content-transparent.form-content-secondary {
+    color: currentColor;
+}
+
+.form-content-transparent.form-content-secondary .avatar {
+    border: 8px solid #3f4b62;
+}
+
+.form-content-transparent.form-content-secondary .avatar:before {
+    background: rgba(63, 75, 98, 0.2);
+}
+
+.form-content-transparent.form-content-secondary .avatar:after {
+    background: rgba(63, 75, 98, 0.1);
+}
+
+.form-content-transparent.form-content-secondary .form-desc h4 {
+    color: #3f4b62;
+}
+
+.form-content-transparent.form-content-secondary .form-input label {
+    color: #3f4b62;
+}
+
+.form-content-transparent.form-content-white {
+    color: currentColor;
+}
+
+.form-content-transparent.form-content-white .avatar {
+    border: 8px solid #ffffff;
+}
+
+.form-content-transparent.form-content-white .avatar:before {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.form-content-transparent.form-content-white .avatar:after {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.form-content-transparent.form-content-white .form-desc h4 {
+    color: #ffffff;
+}
+
+.form-content-transparent.form-content-white .form-input label {
+    color: #ffffff;
+}
+
+.form-content-transparent.form-container-black {
+    color: currentColor;
+}
+
+.form-content-transparent.form-container-black .avatar {
+    border: 8px solid #1d1d1d;
+}
+
+.form-content-transparent.form-container-black .avatar:before {
+    background: rgba(29, 29, 29, 0.2);
+}
+
+.form-content-transparent.form-container-black .avatar:after {
+    background: rgba(29, 29, 29, 0.1);
+}
+
+.form-content-transparent.form-container-black .form-desc h4 {
+    color: #1d1d1d;
+}
+
+.form-content-transparent.form-container-black .form-input label {
+    color: #1d1d1d;
+}
+
+.form-control-line {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 2px solid #ffffff;
+    color: inherit;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-line:focus {
+    color: inherit;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(51, 70, 209, 0.8);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-control-line.form-control-primary {
+    border-bottom-color: #3346d1;
+}
+
+.form-control-line.form-control-primary:focus {
+    border-color: rgba(51, 70, 209, 0.8);
+}
+
+.form-control-line.form-control-primary.custom-select {
+    background: transparent url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23D1335B' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-line.form-control-secondary {
+    border-bottom-color: #3f4b62;
+}
+
+.form-control-line.form-control-secondary:focus {
+    border-color: #2b3343;
+}
+
+.form-control-line.form-control-secondary.custom-select {
+    background: transparent url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%233f4b62' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-line.form-control-white {
+    border-bottom-color: #ffffff;
+}
+
+.form-control-line.form-control-white:focus {
+    border-color: #adadad;
+}
+
+.form-control-line.form-control-white.custom-select {
+    background: transparent url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-line.form-control-black {
+    border-bottom-color: #1d1d1d;
+}
+
+.form-control-line.form-control-black:focus {
+    border-color: #141414;
+}
+
+.form-control-line.form-control-black.custom-select {
+    background: transparent url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%231d1d1d' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-outline {
+    display: block;
+    width: 100%;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: inherit;
+}
+
+.form-control-outline.thick {
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.form-control-outline:focus {
+    color: inherit;
+    border-color: rgba(51, 70, 209, 0.8);
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-control-outline.form-control-primary {
+    border-color: #3346d1;
+}
+
+.form-control-outline.form-control-primary:focus {
+    border-color: rgba(51, 70, 209, 0.8);
+}
+
+.form-control-outline.form-control-primary.custom-select {
+    background: transparent url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23D1335B' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-outline.form-control-secondary {
+    border-color: #3f4b62;
+}
+
+.form-control-outline.form-control-secondary:focus {
+    border-color: #2b3343;
+}
+
+.form-control-outline.form-control-secondary.custom-select {
+    background: transparent url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%233f4b62' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-outline.form-control-white {
+    border-color: #ffffff;
+}
+
+.form-control-outline.form-control-white:focus {
+    border-color: #adadad;
+}
+
+.form-control-outline.form-control-white.custom-select {
+    background: transparent url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-outline.form-control-black {
+    border-color: #1d1d1d;
+}
+
+.form-control-outline.form-control-black:focus {
+    border-color: #141414;
+}
+
+.form-control-outline.form-control-black.custom-select {
+    background: transparent url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%231d1d1d' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-full {
+    display: block;
+    width: 100%;
+    border: none;
+    background: #3346d1;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+.form-control-full:focus {
+    color: inherit;
+    background: rgba(51, 70, 209, 0.8);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-control-full.form-control-primary {
+    background: #3346d1;
+    color: #ffffff;
+}
+
+.form-control-full.form-control-primary:focus {
+    background: rgba(51, 70, 209, 0.8);
+}
+
+.form-control-full.form-control-primary.custom-select {
+    background: #3346d1 url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-full.form-control-secondary {
+    background: #3f4b62;
+    color: #ffffff;
+}
+
+.form-control-full.form-control-secondary:focus {
+    background: #2b3343;
+}
+
+.form-control-full.form-control-secondary.custom-select {
+    background: #3f4b62 url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-full.form-control-white {
+    background: #ffffff;
+    color: #ffffff;
+}
+
+.form-control-full.form-control-white:focus {
+    background: #adadad;
+}
+
+.form-control-full.form-control-white.custom-select {
+    background: #ffffff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-full.form-control-black {
+    background: #1d1d1d;
+    color: #ffffff;
+}
+
+.form-control-full.form-control-black:focus {
+    background: #141414;
+}
+
+.form-control-full.form-control-black.custom-select {
+    background: #1d1d1d url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-transluscent.form-control-primary {
+    background: rgba(209, 51, 91, 0.2);
+    color: #3346d1;
+}
+
+.form-control-transluscent.form-control-primary:focus {
+    background: rgba(209, 51, 91, 0.1);
+}
+
+.form-control-transluscent.form-control-primary.custom-select {
+    background: rgba(209, 51, 91, 0.2) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23D1335B' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-transluscent.form-control-secondary {
+    background: rgba(63, 75, 98, 0.2);
+    color: #3f4b62;
+}
+
+.form-control-transluscent.form-control-secondary:focus {
+    background: rgba(63, 75, 98, 0.1);
+}
+
+.form-control-transluscent.form-control-secondary.custom-select {
+    background: rgba(63, 75, 98, 0.2) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%233f4b62' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-transluscent.form-control-white {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.form-control-transluscent.form-control-white:focus {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-transluscent.form-control-white.custom-select {
+    background: rgba(255, 255, 255, 0.2) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+.form-control-transluscent.form-control-black {
+    background: rgba(29, 29, 29, 0.2);
+    color: #1d1d1d;
+}
+
+.form-control-transluscent.form-control-black:focus {
+    background: rgba(29, 29, 29, 0.1);
+}
+
+.form-control-transluscent.form-control-black.custom-select {
+    background: rgba(29, 29, 29, 0.2) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%231d1d1d' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+textarea {
+    min-height: 96px;
+}
+
+.form-control.shadow {
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form-control.border {
+    border: 1px solid currentColor !important;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group label.error {
+    position: absolute;
+    font-family: "Open Sans", "Opensans", "Roboto", "Helvetica", -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    top: 4px;
+    bottom: auto;
+    right: 0;
+    text-align: right;
+    padding-right: 8px;
+    width: auto;
+    z-index: -1;
+}
+
+.form-group.mb-0 {
+    margin-bottom: 0;
+}
+
+.form-text-feedback {
+    position: relative;
+    font-size: 1rem;
+    height: 1.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-transition: 0.15s;
+    transition: 0.15s;
+}
+
+.form-text-feedback.invisible {
+    height: 0;
+}
+
+.gone {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}

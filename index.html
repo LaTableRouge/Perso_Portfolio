@@ -49,7 +49,6 @@
     <link rel="stylesheet" href="assets/js/lib/vegas/vegas.min.css">
 
     <!-- Main CSS files -->
-    <!-- <link rel="stylesheet" href="assets/css/base.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
     
 </head>
@@ -129,6 +128,7 @@
 
 <!-- Start Content -->
 <main class="page-main page-fullpage main-anim" id="mainpage">
+
     <!-- Start Home -->
     <div class="section section-home fullscreen-md fp-auto-height-responsive main-home" data-section="home">
         <div class="section-wrapper center-vh dir-col anim">
@@ -201,8 +201,22 @@
 
 
     <!-- Start Projects -->
-    <div class="section section-twoside fp-auto-height-responsive " data-section="projects">
-        <div class="section-wrapper twoside dir-col anim">
+    <div class="section section-twoside fp-auto-height-responsive"  data-section="projects">
+        <!-- Desktop -->
+        <div class="section-wrapper twoside dir-col anim" id="projects-desktop">
+            <div class="section-title center-vh  dir-col text-center">
+                <h2 class="display-4 display-title anim-2 mb-32">Projects</h2>
+            </div>
+            <iframe src="slideshow.html" ></iframe>
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Contact me</span>
+                </a>
+            </footer>
+        </div>
+        <!-- Mobile & tablet -->
+        <div class="section-wrapper twoside dir-col anim" id="projects-mobile">
             <div class="section-title center-vh  dir-col text-center">
                 <h2 class="display-4 display-title anim-2 mb-32">Projects</h2>
             </div>
@@ -312,11 +326,11 @@
                         </div>
                         <div>
                             <h4>Phone</h4>
-                            <p>+33 6 49 98 99 29</p>
+                            <a href="tel:+33649989929">+33 6 49 98 99 29</a>
                         </div>
                         <div>
                             <h4>Email</h4>
-                            <p>victordianamlnop@gmail.com</p>
+                            <a href="mailto:victordianamlnop@gmail.com">victordianamlnop@gmail.com</a>
                         </div>
                     </div>
                 </div>

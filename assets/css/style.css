@@ -40,10 +40,6 @@ ul, li {
 iframe {
   border: none; }
 
-ul, li {
-  list-style: none outside none;
-  margin: 0; }
-
 a {
   color: white;
   text-decoration: none;
@@ -5720,3 +5716,19 @@ h1, h2, h3, h4 {
     top: 30px;
     opacity: 0.12;
     width: 100%; } }
+
+#projects-desktop {
+  display: none; }
+
+#projects-mobile {
+  display: block; }
+
+@media screen and (min-width: 991px) {
+  #projects-desktop {
+    display: block; }
+    #projects-desktop iframe {
+      width: 100%;
+      max-width: 1200px;
+      height: 700px; }
+  #projects-mobile {
+    display: none; } }

@@ -5717,6 +5717,17 @@ h1, h2, h3, h4 {
     opacity: 0.12;
     width: 100%; } }
 
+#itempage {
+  margin: 0 2%; }
+
+@media screen and (min-width: 769px) {
+  #itempage {
+    margin: unset; } }
+
+@media screen and (max-width: 768px) {
+  #itempage {
+    margin: unset; } }
+
 #projects-desktop {
   display: none; }
 

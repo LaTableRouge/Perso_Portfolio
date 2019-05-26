@@ -344,14 +344,14 @@ $(document).on('ready', function () {
 });
 
 //item slideShow
-$('.slick').slick({
-    dots: false,
-    arrows: false,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    slidesToShow: 1,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
-});
+// $('.slicky').slick({
+//     dots: false,
+//     arrows: false,
+//     infinite: true,
+//     autoplay: true,
+//     autoplaySpeed: 5000,
+//     slidesToShow: 1,
+//     speed: 500,
+//     fade: true,
+//     cssEase: 'linear'
+// });

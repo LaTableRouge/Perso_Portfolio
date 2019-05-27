@@ -344,7 +344,7 @@ $(document).on('ready', function () {
 });
 
 //item slideShow
-// $('.slicky').slick({
+// $('.slick').slick({
 //     dots: false,
 //     arrows: false,
 //     infinite: true,

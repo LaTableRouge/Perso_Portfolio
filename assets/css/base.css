@@ -69,6 +69,19 @@ a:focus {
 	outline: none;
 }
 
+h5{
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+h6{
+	font-size: 15px;
+	margin: 10px 0;
+}
+ul{
+	margin-top: 0;
+}
+
 .hidden {
 	position: absolute;
 	overflow: hidden;
@@ -302,9 +315,9 @@ a:focus {
 
 .content {
 	position: fixed;
-	top: 10rem;
-	left: 0;
-	width: 100%;
+	top: 0;
+	right: 0;
+	width: 60%;
 	height: calc(100% - 10rem);
 	pointer-events: none;
 	z-index: 100;
@@ -442,6 +455,7 @@ a:focus {
 	.content {
 		top: 0;
 		height: 100%;
+		width: 100%;
 	}
 	.content__item {
 		padding: calc(10vh + 5rem) 0 7vh;
@@ -468,8 +482,6 @@ a:focus {
 	}
 	.content__text {
 		font-size: 0.95rem;
-		column-count: 2;
-		column-gap: 2rem;
 		max-width: 600px;
 		text-align: justify;
 	}

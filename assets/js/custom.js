@@ -356,8 +356,6 @@ $(document).on('ready', function () {
 //     cssEase: 'linear'
 // });
 
-// let myVar;
-
 function loadFunction() {
     setTimeout( ()=>{
         document.getElementById("loader").style.opacity = "0";

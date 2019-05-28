@@ -5763,9 +5763,9 @@ body {
   height: 100%;
   background-color: #1d1d1d;
   opacity: 1;
-  -webkit-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
   z-index: 999; }
   .loader-wrap {
     margin-top: 40px;

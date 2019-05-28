@@ -1,0 +1,63 @@
+.reset{
+    &--container{
+        &-title{
+            text-align: center;
+            color: $blue-title;
+            font-size: 40px;
+        }
+        &-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-mailBox{
+                input{
+                    color: $register-text;
+                    font-size: 25px;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+            }
+            &-buttonBox{
+                margin-top: 15px;
+                &-button{
+                    border-style: solid;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    margin: 5px;
+                    background-color: $yellow;
+                    border-color: $yellow;
+                    color: $blue-txt;
+                    font-size: 25px;
+                    cursor: pointer;
+                    &:hover {
+                        box-shadow:  rgba(26, 26, 29, 0.8) 0px 4px 12px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*OwO Media Queries OwO*/
+/*---------------------*/
+
+/*Small*/
+@media screen and (min-width: 576px){
+
+}
+/*Medium*/
+@media screen and (min-width: 768px){
+
+}
+/*Normal*/
+@media screen and (min-width: 769px) and (max-width: 991px){
+
+}
+/*Large*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+/*Extra Large*/
+@media screen and (min-width: 1200px){
+
+}

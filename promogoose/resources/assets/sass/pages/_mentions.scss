@@ -1,0 +1,21 @@
+.mentions{
+    &--container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2%;
+        &-h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        &-block{
+            width: 90%;
+            &-h2{
+                font-size: 25px;
+            }
+            &-paragraphe{
+                font-size: 20px;
+            }
+        }
+    }
+}

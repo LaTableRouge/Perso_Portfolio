@@ -53,13 +53,36 @@
     
 </head>
 
-<body id="menu" class="body-page">
+<body onload="loadFunction()" id="menu" class="body-page">
 <!--[if lt IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
+<div id="loader" class="loader">
+    <div class="loader-wrap">
+        <h2 class="text-flicker-out-glow-1">W</h2>  
+        <h2 class="text-flicker-out-glow-2">E</h2>   
+        <h2 class="text-flicker-out-glow-3">L</h2> 
+        <h2 class="text-flicker-out-glow-4">C</h2> 
+        <h2 class="text-flicker-out-glow-5">O</h2>  
+        <h2 class="text-flicker-out-glow-6">M</h2>  
+        <h2 class="text-flicker-out-glow-7">E</h2>  
+    </div>
+    <div class="loader-wrap">
+        <h3 class="text-flicker-out-glow-1">B</h3>  
+        <h3 class="text-flicker-out-glow-2">I</h3>   
+        <h3 class="text-flicker-out-glow-3">E</h3> 
+        <h3 class="text-flicker-out-glow-4">N</h3> 
+        <h3 class="text-flicker-out-glow-5">V</h3>  
+        <h3 class="text-flicker-out-glow-6">E</h3>  
+        <h3 class="text-flicker-out-glow-7">N</h3> 
+        <h3 class="text-flicker-out-glow-7">U</h3> 
+        <h3 class="text-flicker-out-glow-8">E</h3>  
+    </div>
+</div>
+
 <!-- Start Header -->
-<header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
+<header id="header" class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
     <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
         <span class="menu-icon menu-icon-random">
         <span class="bars">
@@ -165,7 +188,7 @@
                         <div class="media">
                             <div class="media-body">
                                 <h4>English</h4>
-                                <i class="icon icon ion-code-working"></i>
+                                <!-- <i class="icon icon ion-code-working"></i> -->
                                 <p>After graduating Advanced technician in Software solution and business application in 2018 I specialized in Web development.
                                     Fascinated by music and new discoveries in computing, I benefited from professional experiences in various environments thanks to the different internships I did during my trainings.
                                     I have a particular interest in web design and web integration.</p>
@@ -179,7 +202,7 @@
                         <div class="media">
                             <div class="media-body">
                                 <h4>Français</h4>
-                                <i class="icon icon ion-code-working"></i>
+                                <!-- <i class="icon icon ion-code-working"></i> -->
                                 <p>Après avoir obtenu mon diplôme de technicien supérieur en solution logicielle et application métier en 2018, je me suis spécialisé en développement Web.
                                     Passionné par la musique et les nouvelles découvertes informatiques, j'ai profité d'expériences professionnelles dans des environnements variés grâce aux différents stages effectués lors de mes formations.
                                     J'ai un intérêt particulier pour la conception et l'intégration Web.</p>
@@ -207,7 +230,7 @@
             <div class="section-title center-vh  dir-col text-center">
                 <h2 class="display-4 display-title anim-2 mb-32">Projects</h2>
             </div>
-            <iframe src="slideshow.html" ></iframe>
+            <iframe scrolling="no" src="slideshow.html" ></iframe>
             <footer class="section-footer scrolldown">
                 <a class="down">
                     <span class="icon"></span>

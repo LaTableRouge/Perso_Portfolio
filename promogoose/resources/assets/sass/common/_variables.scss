@@ -1,0 +1,121 @@
+$blue-title: #110048;
+$blue-txt: #110047;
+$blue-clear:#2a5d79;
+$yellow: #fcd12a;
+$grey: #939393;
+$red: #ec2426;
+
+//Gestion shop
+$gestion-shop-title: #110048;
+$gestion-shop-box-border: #120048;
+$gestion-shop-box-txt: #110047;
+$gestion-shop-button-bg: #fcd12a;
+$gestion-shop-button-txt: #110047;
+
+//Shop
+    //slider
+    $box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
+    //radio color
+    $radio-check-color: #120048;
+    $radio-check-border-color: #2f1f5e;
+    $next-right-button: #120048;
+
+
+//MapScreen
+$map-searchinput-text : #292a79;
+$map-searchinput-input-bg : #292a79;
+$map-title : #292a79;
+$map-categorytype-bg : #292a79;
+$map-filter-optgroup : #292a79;
+$map-filter-optgroup-bb : #292a79;
+$map-filter-option-hover-bg : #939393;
+$map-result-title : #120048;
+$map-result-separator : #120048;
+$map-result-scroll-box : #cacaca;
+$map-result-scroll-box-title : #120048;
+$map-result-scroll-box-input-bg : #fed32a;
+$map-result-scroll-box-input-text : #100047;
+
+//Register
+$register-facebook-bg : #3c4a97;
+$register-facebook-button-bg : #2a346a;
+$register-google-bg : #4668f3;
+$register-google-button-bg : #3149a9;
+$register-title : #100047;
+$register-text : #939393;
+$register-form : #939393;
+$register-separator : #939393;
+$register-required : #ea2823;
+$register-submit : #fed32a;
+$register-submit-text : #100047;
+
+//header
+$header-bg : #110047;
+$header-search-icon: #fcd129;
+$header-search-bg : #272877;
+$header-search-txt : #295d79;
+$header-register-bg : #295d79;
+$header-hover-bg : #295d79;
+
+// Footer
+$footer-bg : #272976;
+$footer-button : #fcd129;
+$footer-button-text : #272976;
+
+//home
+$home-searchinput-text : #b7c9d2;
+$home-searchinput-input-bg : #292a79;
+$home-ccm-title-text : #110048;
+$home-ccm-faicon : #292a78;
+$home-ccm-faicon-arrow : #fcd12a;
+$home-choice-button : #120048;
+$home-choice-title-bg : #120048;
+$home-also-title : #120048;
+$home-also-txt : #120048;
+
+// Body
+$body-bg: #f5f8fa;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+
+//Ariane
+.ariane{
+    text-decoration: none;
+    color: $blue-txt;
+    font-size: 20px;
+    margin: 5px;
+}

@@ -1,0 +1,412 @@
+/*Search section*/
+.container--search{
+    font-family: 'Homizio';
+    &-bg{
+        width: 100%;
+        height: 70vw;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &-text{
+        color: white;
+        text-shadow:  rgba(26, 26, 29, 0.8) 0px 4px 12px !important;
+        font-size: 6.5vw;
+        font-weight: bold;
+        width: 100%;
+        line-height: 1.1;
+        padding: 35px 50px;
+    }
+    &-inputbox{
+        &-button{
+            margin: 0 20px;
+            border-radius: 15px;
+            border-color: $blue-clear;
+            border: 0px !important;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px !important;
+            color: white;
+            background-color: $blue-clear;
+            font-size: 5vw;
+            padding: 3vw;
+            &:hover {
+                box-shadow:  rgba(26, 26, 29, 0.8) 0px 4px 12px !important;
+                color: $yellow;
+                background-color: $blue-txt;
+            }
+            &:link {
+                text-decoration: none;
+            }
+        }
+    }
+}
+/*Comment ça marche section*/
+.ccm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 80px;
+    &-title{
+        font-family: 'Homizio';
+        font-weight: 650;
+        color: $home-ccm-title-text;
+        font-size: 7vw;
+    }
+    &-explication{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-search, &-coupon, &-shop{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+        }
+        &-text{
+            display: flex;
+            flex-direction: column;
+        }
+        &-p{
+            font-family: 'Offerings';
+            font-weight: 600;
+            font-size: 5vw;
+            line-height: 1;
+            margin: 0;
+            margin-left: 2vw;
+        }
+        &-span{
+            font-size: 4vw;
+            line-height: 1;
+            margin-left: 2vw;
+            font-family: 'Homizio';
+        }
+    }
+}
+.ccm-explication-ico{
+    color: $home-ccm-faicon;
+    width: 8vw;
+    &-coupon {
+        transform: rotate(45deg);
+    }
+    &-arrow{
+        color: $home-ccm-faicon-arrow;
+        font-size: 50px;
+        align-items: center;
+        transform: rotate(90deg);
+        width: 3vw;
+    }
+}
+/*Video Trailer*/
+.video{
+    &-container{
+        width: 100%;
+        iframe {
+            width: 100%;
+        }
+    }
+}
+/*Choix section*/
+.choice{
+    font-family: 'Homizio';
+    &--title{
+        width: 100%;
+        background-color: $home-choice-title-bg;
+        color: white;
+        &-text {
+            font-size: 6vw;
+            padding: 2vw;
+        }
+    }
+    &--container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        &-box{
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 2vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid rgb(235, 235, 235) !important;
+            border-radius: 4px !important;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px !important;
+            &-title{
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 20px;
+                a {
+                    color: $blue-clear;
+                    font-weight: 800;
+                    font-size: 20px;
+                    font-family: 'Homizio';
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+            &-text{
+                a {
+                   color: black;
+                   margin-top: 20px;
+                   cursor: pointer;
+                   &:hover {
+                       text-decoration: none;
+                   }
+                }
+                font-size: 4vw;
+                height: 100px;
+                width: 90%;
+                display: flex;
+                margin: 0 auto;
+            }
+            &-img{
+                height: 250px;
+                width: 100%;
+                cursor: pointer;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+            &-button{
+                border-radius: 30px;
+                border-color: $home-choice-button;
+                color: white;
+                background-color: $home-choice-button;
+                font-size: 25px;
+                padding: 10px 30px;
+                margin: auto;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                &:hover {
+                    box-shadow:  rgba(26, 26, 29, 0.8) 0px 4px 12px !important;
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}
+.also{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &--title{
+        text-align: center;
+        font-size: 30px;
+        color: $home-also-title;
+    }
+    &--container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        &-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid rgb(235, 235, 235) !important;
+            border-radius: 4px !important;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px !important;
+            padding: 2vw;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 2vw;
+            &-titleb {
+                font-size: 20px;
+                margin-bottom: 2vw;
+                font-weight: 800;
+            }
+            &-text{
+                width: 80%;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+                color: $home-also-txt;
+                margin: 0 auto;
+            }
+            &-button {
+                border-radius: 30px;
+                border-color: $home-choice-button;
+                color: white;
+                background-color: $home-choice-button;
+                font-size: 25px;
+                padding: 10px 30px;
+                margin: 0 auto;
+                &:hover {
+                    box-shadow:  rgba(26, 26, 29, 0.8) 0px 4px 12px !important;
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container--search{
+        font-family: 'Homizio';
+        &-bg {
+            height: 55vw;
+        }
+        &-text {
+            width: 80%;
+            font-size: 5vw;
+        }
+        &-inputbox {
+            margin-top: 60px;
+            &-button {
+                font-size: 2.5vw;
+            }
+        }
+    }
+    .ccm{
+        &-title {
+            font-size: 5vw;
+        }
+        &-explication {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            &-search, &-coupon, &-shop{
+                width: 30%;
+            }
+            &-p {
+                font-size: 3vw;
+            }
+            &-span{
+                font-size: 2vw;
+            }
+        }
+    }
+    .ccm-explication-ico{
+        width: 10vw;
+        &-arrow{
+            transform: rotate(0deg);
+        }
+    }
+    .choice{
+        font-family: 'Homizio';
+        &--title {
+            &-text {
+                font-size: 5vw;
+            }
+        }
+        &--container {
+            justify-content: space-evenly;
+            width: 70%;
+            margin: 0 auto;
+            &-box {
+                &-text {
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+    .also{
+        &--container {
+            flex-direction :row;
+            justify-content: space-evenly;
+            &-box {
+                width: 30%;
+                &-text {
+                    height: 250px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991px){
+    .container--search{
+        &-text {
+            font-size:4vw;
+        }
+        &-bg{
+            height: 40vw;
+        }
+        &-inputbox {
+            &-button {
+                font-size: 2vw;
+                padding: 1.5vw;
+            }
+        }
+    }
+    .ccm{
+        &-explication {
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            &-p {
+                font-size: 2vw;
+            }
+            &-span {
+                font-size: 1.5vw;
+            }
+            &-search, &-coupon, &-shop{
+                width: 30%;
+            }
+        }
+        &-title {
+            font-size: 3.2vw;
+        }
+    }
+    .ccm-explication-ico{
+        width: 7vw;
+    } 
+    .choice{
+        font-family: 'Homizio';
+        &--container {
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 90%;
+            &-box {
+                width: 30%;
+                &-text {
+                    font-size: 1.5vw;
+                    height: 100px;
+                }
+                &-img {
+                    height: 200px;
+                }
+            }
+        }
+        &--title{
+            &-text {
+                font-size: 3vw;
+                text-align: center;
+            }
+        }
+    }
+    .also{
+        &--container {
+            &-box {
+                &-text {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .choice{
+        &--container {
+            &-box {
+                &-text {
+                    font-size: 1vw;
+                }
+            }
+        }
+    }
+}

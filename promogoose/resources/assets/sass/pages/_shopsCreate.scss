@@ -1,0 +1,174 @@
+.create{
+    &--shop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $blue-txt;
+        &-title{
+            text-align: center;
+            font-size: 35px;
+            color: $blue-title;
+        }
+        &-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 1px solid $register-form;
+            border-radius: 6px;
+            padding: 40px 10px;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 50px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px !important;
+            font-weight: bolder;
+    
+            &-container{
+                &-labelBox{
+                    &-label{
+                        color: $blue-clear;
+                        font-size: 15px;
+                        font-family: 'Homizio';
+                        font-weight: bold;
+                    }
+                    &-labelFile{
+                        margin-top: 10px;
+                        font-family: 'Homizio';
+                        cursor: pointer;
+                        color: $yellow;
+                        background-color: $blue-clear;
+                        border-radius: 5px;
+                        padding: 10px 20px;
+                    }
+                    &-input{
+                        display: none;
+                    }
+                }
+                &-descBox, input, textarea, select{
+                    color: $register-text;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    input, textarea {
+                        border: 1px solid rgb(235, 235, 235) !important;
+                        border-radius: 15px !important;
+                    }
+                }
+            }
+            &-buttonBox{
+                margin-top: 25px;
+                display: flex;
+                justify-content: center;
+                &-input{
+                    background-color: $blue-clear;
+                    border-color: $blue-clear;
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 20px;
+                    font-family: 'Homizio';
+                    padding: 10px 20px;
+                    border-style: solid;
+                }
+            }
+        }
+    }
+}
+/*Menu déroulant pour l'adresse*/
+.ui-menu{
+    width: 200px;
+}
+.ui-menu-item{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-bottom: 1.5px solid $blue-clear;
+    font-size: 20px;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+    &:hover{
+        background-color: rgb(192, 192, 192);
+    }
+}
+
+/*map*/
+#mapid {
+    height: 300px;
+    width: 300px;
+    border-radius: 6px;
+    border: 1px solid $register-form;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+/*imput type file*/
+#photo1Mag{
+    width: 100%;
+}
+
+/*css pour l'image*/
+#displayPitcure{
+    border-radius: 6px;
+    border: 1px solid $register-form;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+/*OwO Media Queries OwO*/
+/*---------------------*/
+
+/*Small*/
+@media screen and (min-width: 576px){
+    .create{
+        &--shop{
+            // flex-direction: column;
+            &-form{
+                width: 50%;
+            }
+        }
+    }
+}
+/*Medium*/
+@media screen and (min-width: 768px){
+    .create{
+        &--shop{
+            &-form{
+                width: 60%;
+            }
+        }
+    }
+}
+/*Normal*/
+@media screen and (min-width: 769px) and (max-width: 991px){
+
+}
+/*Large*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+/*Extra Large*/
+@media screen and (min-width: 1200px){
+    #mapid{
+        width: 30%;
+        height: 600px;
+    }
+    .create{
+        &--shop{
+            flex-direction: row;
+            // justify-content: center;
+            &-title{
+                font-size: 45px;
+            }
+            &-form{
+                margin-left: 20%;
+                margin-right: 40px;
+                align-items: unset;
+                width: 35%;
+                &-container{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &-labelBox{
+                        &-label{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

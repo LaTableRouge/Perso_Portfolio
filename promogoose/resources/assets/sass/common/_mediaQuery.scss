@@ -1,0 +1,396 @@
+/*OwO Media Queries OwO*/
+/*---------------------*/
+
+/*Small*/
+@media screen and (min-width: 576px){
+
+}
+/*Medium*/
+@media screen and (min-width: 768px){
+
+}
+/*Normal*/
+@media screen and (min-width: 769px) and (max-width: 991px){
+
+}
+/*Large*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+/*Extra Large*/
+@media screen and (min-width: 1200px){
+
+}
+
+
+// Small devices
+@media screen and (min-width: 576px){
+
+    // /* mes Avis Section */
+    // body .avis{
+    //     &--container{
+    //         &-title{
+    //             font-size: 45px;
+    //         }
+    //         &-form{
+    //             &-codeBox{
+    //                 flex-direction: row;
+    //                 &-input{
+    //                     margin-left: 10px;
+    //                     padding: 5px 10px;
+    //                     font-size: 32px;
+    //                 }
+    //             }
+    //             &-textArea{
+    //                 margin-top: 15px;
+    //                 width: 30%;
+    //                 font-size: 32px;
+    //             }
+    //             &-button{
+    //                 font-size: 35px;
+    //             }
+    //         }
+    //     }
+    // }
+
+    // /* End mes Avis Section */
+
+    // /* Login Section */
+    // body .login{
+    //     &--container{
+    //         &-title{
+    //             font-size: 45px;
+    //         }
+    //         &-form{
+    //             &-mail, &-pwd{
+    //                 font-size: 35px;
+    //                 padding: 10px 20px;
+    //             }
+    //             &-connexionBox{
+    //                 &-connexion, &-reset{
+    //                     padding: 8px 16px;
+    //                 }
+    //                 &-connexion{
+    //                     font-size: 30px;
+    //                 }
+    //                 &-reset{
+    //                     font-size: 20px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    // /* End Login Section */
+
+    // /* Shop Edit Section */
+    // body .edit{
+    //     &--shop{
+    //         &-title{
+    //             text-align: start;
+    //             font-size: 30px;
+    //             border-bottom: 1px solid $yellow;
+    //             margin: 0 5% 20px 5%;
+    //         }
+    //         &-formBox{
+    //             &-container{
+    //                 display: flex;
+    //                 justify-content: space-between;
+    //                 &-labelBox{
+    //                     width: 300px;
+    //                     text-align: left;
+    //                     &-label{
+    //                         text-align: left;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // /* End Shop Edit Section */
+
+    // /* Promo Gestion Section */
+    // body .promos{
+    //     &--gestion{
+    //         &-box{
+    //             flex-direction: row;
+    //             width: 55%;
+    //             justify-content: space-between;
+    //             text-align: unset;
+    //             &-txt{
+    //                 font-size: 18px;
+    //             }
+    //         }
+    //     }
+    // }
+    // /* End Promo Gestion Section */
+
+    // /* Account Section */
+    // body .client{
+    //     &--container{
+    //         &-info{
+    //             &-title{
+    //                 text-align: start;
+    //                 font-size: 30px;
+    //             }
+    //             &-formBox{
+    //                 &-buttonBox{
+    //                     margin-top: 30px;
+    //                 }
+    //             }
+    //             &-form{
+    //                 margin-top: 20px;
+    //                 &-box{
+    //                     flex-direction: row;
+    //                     &-labelBox{
+    //                         width: 180px;
+    //                         border-right: 1px solid $blue-clear;
+    //                     }
+    //                     &-descBox{
+    //                         margin-left: 100px;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         &-activity{
+    //             &-title{
+    //                 text-align: start;
+    //             }
+    //             &-box{
+    //                 padding: 0 37%;
+    //                 margin-top: 20px;
+    //                 &-txt{
+    //                     text-align: start;
+
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // /* End Account Section */
+
+    // /* Promos Section */
+    // body .promo{
+    //     &--container{
+    //         display: flex;
+    //         flex-direction: column;
+    //         align-items: center;
+    //         &-title{
+    //             font-size: 55px;
+    //         }
+    //         &-box{
+    //             flex-direction: row;
+    //             justify-content: space-evenly;
+    //             width: 35%;
+    //             margin: 1%;
+    //         }
+    //         &-buttonBox{
+    //             flex-direction: row;
+    //             margin-top: 40px;
+    //             &-histo, &-advice{
+    //                 margin-top: 0;
+    //                 margin: 0 5px;
+    //             }
+    //         }
+
+    //     }
+    // }
+    // /* End Promos Section */
+
+    // /* Shop Section*/
+    // body .shop{
+    //     &--container{
+    //         &-title{
+    //             font-size: 55px;
+    //         }
+    //         &-slider{
+    //             &-container{
+    //                 &-imgbox{
+    //                     &-prev, &-next{
+    //                         display: block;
+    //                         width: 12%;
+    //                         height: inherit;
+    //                         position: absolute;
+    //                         top: 0;
+    //                         z-index: 99;
+    //                         transition: .45s;
+    //                         cursor: pointer;
+    //                         text-align: center;
+    //                         &:hover{
+    //                             transition: .3s;
+    //                         }
+    //                         span{
+    //                             position: absolute;
+    //                             width: 0px;
+    //                             height: 0px;
+    //                             border: solid 20px;
+    //                             top: 50%;
+    //                             transform: translateY(-50%);
+    //                         }
+    //                     }
+    //                     &-prev{
+    //                         left: -12%;
+    //                         span{
+    //                             border-color: transparent $next-right-button transparent transparent;
+    //                             right: 35%;
+    //                         }
+    //                     }
+    //                     &-next{
+    //                         right: -12%;
+    //                         span{
+    //                             border-color: transparent transparent transparent $next-right-button;
+    //                             left: 35%;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         &-desc{
+    //             margin-top: 100px;
+    //             flex-direction: row;
+    //             justify-content: space-evenly;
+    //             &-location{
+    //                 &-title{
+    //                     font-size: 40px;
+    //                 }
+    //                 &-txt{
+    //                     font-size: 25px;
+    //                 }
+    //             }
+    //             &-schedule{
+    //                 &-title{
+    //                     font-size: 40px;
+    //                 }
+    //                 &-txt{
+    //                     &-p{
+    //                         font-size: 25px;
+    //                     }
+    //                     &-span{
+    //                         font-size: 22px;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         &-promo{
+    //             margin: 5% 15%;
+    //             &-desc{
+    //                 flex-direction: row;
+    //                 justify-content: space-between;
+    //                 &-button{
+    //                     font-size: 2vw;
+    //                 }
+    //             }
+                
+    //         }
+    //     }
+    // }
+    // /*End Shop Section*/
+
+    // /* SearchMap section */
+    // body .search{
+    //     &--container{
+    //         &-inputbox{
+    //             flex-direction: row;
+    //             justify-content: center;
+    //             margin-top: 40px;
+    //             &-input{
+    //                 width: 50%;
+    //                 padding: 10px;
+    //             }
+    //             &-button{
+    //                 margin: 0 10px;
+    //                 padding: 7px;
+    //                 width: 180px;
+    //             }
+    //         }
+    //         &-filter{
+    //             display: flex;
+    //             flex-direction: row;
+    //             align-items: center;
+    //             justify-content: center;
+    //             margin-top: 15px;
+    //             &-box{
+    //                 margin: 0 20px;
+    //             }
+    //             &-category, &-type{
+    //                 margin: 0 3%;
+    //             }
+    //         }
+    //     }
+    // }
+    // body #map{
+    //     margin-top: 40px;
+    //     height: 600px;
+    // }
+    // body .result{
+    //     &--container{
+    //         &-separator{
+    //             height: 0.5vw;
+    //         }
+    //         &-scroll{
+    //             &-box{
+    //                 &-content{
+    //                     display: flex;
+    //                     flex-direction: row;
+    //                     width: 500px;
+    //                     //A voir pourquoi ca bug
+    //                     &-img{
+    //                         margin-top: auto;
+    //                         margin-bottom: auto;
+    //                         width: 50%;
+    //                         height: 50%;
+    //                     }
+    //                     &-desc{
+    //                         width: 50%;
+    //                         display: flex;
+    //                         flex-direction: column;
+    //                         align-items: center;
+    //                         &-txt{
+    //                             font-size: 20px;
+    //                         }
+    //                         &-input{
+    //                             font-size: 25px;
+    //                             padding: 5px 10px;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // /* End SearchMap section */
+// }
+
+
+// // Normal devices
+// @media screen and (min-width: 768px){
+
+//     /* Footer section */
+//     body .footer--subscribe{
+//         &-p{
+//             font-size: 30px;
+//         }
+//         &-button{
+//             font-size: 25px;
+//         }
+//     }
+//     body .footer--container{
+//         &-p{
+//             font-size: 30px;
+//         }
+//         &-a{
+//             font-size: 20px;
+//         }
+//     }
+//     body .footer--social{
+//         &-p{
+//             font-size: 30px;
+//         }
+//         &-box{
+//             &-a{
+//                 font-size: 35px;
+//             }
+//         }
+//     }
+//     /* End Footer section */
+}

@@ -1,0 +1,92 @@
+.login{
+    &--container{
+        &-title{
+            text-align: center;
+            color: $blue-title;
+            font-size: 40px;
+        }
+        &-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-mail, &-pwd{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 5px 10px;
+                width: 90%;
+                input{
+                    border: 1px solid rgb(235, 235, 235) !important;
+                    border-radius: 15px !important;
+                    font-size: 6vw;
+                    margin-bottom: 4vw;
+                    padding: 3vw;
+                    font-family: 'Offerings';
+                    font-weight: 600;
+                    width: 100%;
+                }
+                /*Message d'erreur pour mdp incorrect*/
+                .help-block{
+                    margin-top: 15px;
+                    color: red;
+                }
+            }
+            &-connexionBox{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-connexion, &-reset{
+                    border-style: solid;
+                    border-radius: 5px;
+                    padding: 4vw;
+                    margin: 5px;
+                    cursor: pointer;
+                    &:hover {
+                        box-shadow:  rgba(26, 26, 29, 0.8) 0px 4px 12px !important;
+                    }  
+                }
+                &-connexion{
+                    background-color: $yellow;
+                    border-color: $yellow;
+                    color: $blue-txt;
+                    font-size: 25px;
+                }
+                &-reset{
+                    font-size: 25px;
+                    background-color: $blue-clear;
+                    border-color: $blue-clear;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 769px) {
+    .login {
+        &--container{
+            &-form {
+                &-mail, &-pwd {
+                    width: 60%;
+                    input{
+                        font-size: 2vw;
+                        padding: 1vw;
+                        margin-bottom: 1vw;
+                    }
+                }
+                &-connexionBox{
+                    flex-direction: row;
+                    &-connexion, &-reset {
+                        padding: 2vw;
+                    }
+                }
+            }
+        }
+    }
+}
+/*Large*/
+@media screen and (min-width: 992px){
+
+}

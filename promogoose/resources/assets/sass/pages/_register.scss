@@ -1,0 +1,297 @@
+.register{
+    &--container{
+        &-top{
+            display:flex;
+            flex-direction:column;
+            justify-content:space-around;
+            height:300px;
+            margin-top:70px;
+        }
+        &-title{
+            text-align: center;
+            font-size: 4vw;
+            color: $register-title;
+        }
+        &-social{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            width: 40%;
+            margin-left:auto;
+            margin-right:auto;
+            //Button facebook
+            &-fbCo{
+                display: flex;
+                align-items: center;
+                width:100%;
+                &-button{
+                    background-color: $register-facebook-button-bg;
+                    border-color: $register-facebook-button-bg;
+                    border-style: solid;
+                    border-radius: 0 4px 4px 0;
+                    width:100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    cursor: pointer;
+                    &:hover {
+                        box-shadow:  rgba(26, 26, 29, 0.8) 0px 4px 12px !important;
+                        color: $yellow;
+                    }  
+                }
+                &-a{
+                    width: 100%;
+                    font-family: 'Homizio' !important;
+                    text-decoration: none;
+                    font-size:15px;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                &-i{
+                    background-color: $register-facebook-bg;
+                    font-size: 1rem;
+                    color: white;
+                    padding: 0.7vw;
+                    border-radius: 4px 0 0 4px;
+                    height:40px;
+                    width: 40px;
+                }
+            }
+            //Button Google
+            &-goCo{
+                margin-top: 2vw;
+                display: flex;
+                align-items: center;
+                width:100%;
+                &-button{
+                    background-color: $register-google-button-bg;
+                    border-color: $register-google-button-bg;
+                    border-style: solid;
+                    border-radius: 0 4px 4px 0;
+                    width:100%;
+                    height:40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    cursor: pointer;
+                    &:hover {
+                        box-shadow:  rgba(26, 26, 29, 0.8) 0px 4px 12px !important;
+                        color: $yellow;
+                    } 
+                }
+                &-a{
+                    width: 100%;
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-family: 'Homizio';
+                }
+                &-i{
+                    background-color: $register-google-bg;
+                    font-size: 1rem;
+                    color: white;
+                    padding: 0.7vw;
+                    border-radius: 4px 0 0 4px;
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+
+        &-separator{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: $register-separator;
+            font-size: 2.3vw;
+            margin-top: 3vw;
+            &-line{
+                height: 1px;
+                background-color: $register-separator;
+                width: 40%;
+            }
+        }
+
+        &-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 6px;
+            width: 80%;
+            height: auto;
+            margin: auto;
+            margin-bottom:100px;
+            margin-top: 100px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px !important;
+            color: $register-required;
+            font-weight: bolder; 
+            padding: 2vw;
+            &-NP{
+                display: flex;
+                flex-direction: column;
+                justify-content:space-between;
+                width:100%;
+                &-name{
+                    width:100%;
+                }
+                &-prenom{
+                    width:100%;
+                }
+            }
+            &-PWD{
+                display: flex;
+                flex-direction: column;
+                justify-content:space-between;
+                width:100%;
+                &-password{
+                    width:100%;
+                }
+                &-passwordConfirm{
+                    width:100%;
+                }
+            }
+            &-label {
+                color: $blue-clear;
+                font-family: 'Homizio';
+            }
+            &-input{
+                border: 1px solid rgb(235, 235, 235) !important;
+                border-radius: 15px !important;
+                font-size: 4vw;
+                padding: 5px 10px;
+                width:100%;
+                margin-bottom: 6vw;
+                padding: 1vw;
+                font-family: 'Offerings';
+                font-weight: 600;
+            }
+            &-email, &-telephone{
+                width:100%;
+                &-input{
+                    border: 1px solid rgb(235, 235, 235) !important;
+                    border-radius: 15px !important;
+                    font-size: 4vw;
+                    padding: 5px 10px;
+                    width: 100%;
+                    margin-bottom: 6vw;
+                    padding: 1vw;
+                    font-family: 'Offerings';
+                    font-weight: 600;
+                }
+            }
+
+            &-check{
+                display: flex;
+                flex-direction: column;
+                &-title{
+                    color: $register-text;
+                    font-size: 3vw;
+                    font-weight: 200;
+                    padding: 0px 10px;
+                }
+                &-box{
+                    display: flex;
+                    align-items: center;
+                    &-label{
+                        color: $register-text;
+                        font-size: 3vw;
+                        font-weight: 100;
+                    }
+                }
+            }
+
+            &-submit{
+                font-family: 'Homizio';
+                background-color: $register-submit;
+                border-color: $register-submit;
+                color: $register-submit-text;
+                font-size: 3vw;
+                padding: 20px;
+                border-radius: 5px;
+                border-style: solid;
+                cursor: pointer;
+                &:hover {
+                    box-shadow:  rgba(26, 26, 29, 0.8) 0px 4px 12px !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .register{
+        &--container{
+            &-form {
+                &-input {
+                    font-size: 2.5vw;
+                }
+                &-email, &-telephone {
+                    &-input {
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:960px) {
+    .register{
+        &--container{
+            &-title{
+                font-size:2.5vw;
+            }
+            &-social{
+                flex-direction:row;
+                justify-content: space-around;
+                &-fbCo{
+                    width: 45%;
+                }
+                //Button Google
+                &-goCo{
+                    margin-top: 0;
+                    width: 45%;
+                }
+            }
+            &-form{
+                width:50%;
+                &-NP{
+                    flex-direction: row;
+                    &-name{
+                        width:45%;
+                    }
+                    &-prenom{
+                        width:45%;
+                    }
+                }
+                &-input{
+                    font-size: 1vw;
+                    margin-bottom: 3vw;
+                }
+                &-PWD{
+                    flex-direction: row;
+                    &-password{
+                        width:45%;
+                    }
+                    &-passwordConfirm{
+                        width:45%;
+                    }
+                }
+                &-email, &-telephone{
+                    &-input{
+                        font-size: 1vw;
+                        margin-bottom: 3vw;
+                    }
+                }
+                &-submit{
+                    font-size:1.5vw;
+                }
+            }
+        }
+    }
+}

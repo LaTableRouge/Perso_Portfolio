@@ -1,0 +1,341 @@
+.search{
+    &--container{
+        // searchInput
+        &-inputbox{
+            margin-top: 4vw;
+            display: flex;
+            flex-direction: column;   
+            align-items: center;       
+            &-input{
+                width: 80%;
+                color: $home-searchinput-text;
+                font-size: 18px;
+                border: 1px solid rgb(235, 235, 235) !important;
+                border-radius: 15px !important;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px !important;
+                padding-left: 2vw;
+                padding: 3vw;
+            }
+            &-button{
+                border-radius: 20px;
+                border-color: $map-searchinput-input-bg;
+                border-style: solid;
+                color: white;
+                background-color: $map-searchinput-input-bg;
+                font-size: 20px;
+                width: 40%;
+                padding: 2vw;
+                margin-top: 2vw;
+                cursor: pointer;
+                &:hover {
+                    box-shadow:  rgba(26, 26, 29, 0.8) 0px 4px 12px !important;
+                }
+            }
+        }
+
+        //Filters
+        &-filter{
+            margin-top: 40px;
+            width: 100%;
+            margin: 0 auto;
+            &-box{
+                display: flex;
+                justify-content: center;
+            }
+            &-selectbox{
+                display: flex;
+                justify-content: space-evenly; 
+                width: 100%;
+                margin: 0 auto;
+            }
+            &-select {
+                width: 35%;
+                height: 3em;
+                line-height: 3;
+                background: #2c3e50;
+                overflow: hidden;
+                border-radius: .25em;
+                
+            }
+            &-category{
+                padding-left: 15%;
+            }
+            &-type{
+                padding-left: 25%;
+            }
+            &-category, &-type{
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -ms-appearance: none;
+                appearance: none;
+                outline: 0;
+                box-shadow: none;
+                border: 0 !important;
+                background: $blue-clear;
+                background-image: none;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                color: #fff;
+                font-family: 'Homizio';
+                cursor: pointer;
+                &::-ms-expand {
+                    display: none;
+                }
+                &:after {
+                    content: '\25BC';
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    padding: 0 1em;
+                    background: #f39c12;
+                }
+                &:hover{
+                    color: #f39c12;
+                }
+                &:after {
+                    -webkit-transition: .25s all ease;
+                    -o-transition: .25s all ease;
+                    transition: .25s all ease;
+                }
+            }
+        }
+    }
+}
+
+.result{
+    &--container{
+        &-title{
+            color: $map-result-title;
+            font-size: 20px;
+            padding: 0px 1%;
+            margin: 0;
+            margin-top: 2vw;
+        }
+        &-separator{
+            background-color: $map-result-separator;
+            margin: 0px 1%;
+            height: 2px;
+            width: 98%;
+        }
+        &-scroll{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            overflow: auto;
+            height: 10%;
+            &-box{
+                margin: 5px;
+                border: 1px solid rgb(235, 235, 235) !important;
+                border-radius: 4px !important;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-title{
+                    font-size: 30px;
+                    font-weight: 800;
+                    font-family: 'Homizio';
+                    margin-top: 20px;
+                    text-align: left;
+                    color: $yellow;
+                    background-color:  $blue-txt;
+                    margin-top: 0;
+                    width: 100%;
+                    padding: 1vw;
+                    text-align: center;
+                }
+                &-content{
+                    width: 250px;
+                    height: 200px;
+                    &-img{
+                        width: 100%;
+                        height: 150px;
+                        background-size: cover;
+                        background-position: center center;
+                    }
+                    &-txt{
+                        color: black;
+                        font-size: 18px;
+                        font-family: 'Homizio';
+                        text-align: center;
+                    }      
+                    .adresse{
+                        font-weight: bold;
+                        color: $blue-clear;
+                    }  
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+                &-input{
+                    background-color: $map-result-scroll-box-input-bg;
+                    border-color: $map-result-scroll-box-input-bg;
+                    color: $map-result-scroll-box-input-text;
+                    font-size: 15px;
+                    border-radius: 5px;
+                    border-style: solid;
+                    padding: 1vw;  
+                    margin-bottom: 20px;
+                    cursor: pointer;  
+                    &:hover {
+                        box-shadow:  rgba(26, 26, 29, 0.8) 0px 4px 12px !important;
+                    }     
+                }
+            }
+        }
+    }
+}
+
+/*Voir pourquoi le hover ne marche pas*/
+option{
+    background-color: white;
+    color: black;
+    &:hover{
+        background-color: $map-filter-option-hover-bg;
+    }
+}
+optgroup{
+    color: $map-filter-optgroup;
+    border: 1px solid $map-filter-optgroup-bb;
+    background-color: white;
+    font-weight: bold;
+}
+/*CSS car la map a besoin de dimensions pour etre affichee*/
+#map {
+    width : 100%;
+    height : 350px;
+}
+
+
+
+/*Medium*/
+@media screen and (min-width: 769px){
+    .search{
+        &--container{
+            &-inputbox{
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 40px;
+                &-input{
+                    width: 50%;
+                    padding: 2vw;
+                    font-size: 15px;
+                }
+                &-button{
+                    padding: 2vw;
+                    width: 180px;
+                    font-size: 15px;
+                    margin-top: 0vw;
+                    margin-left: 2vw;
+                }
+            }
+            &-filter{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: 15px;
+                width: 80%;
+                &-selectbox {
+                    width: 60%;
+                }
+                &-select {
+                    width: 40%;
+                }
+                &-box{
+                    margin: 0 20px;
+                }
+                &-category, &-type{
+                    font-size: 2vw;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    body #map{
+        margin-top: 40px;
+        height: 600px;
+    }
+    body .result{
+        &--container{
+            &-scroll{
+                &-box{
+                    &-title{
+                        margin-bottom: 0;
+                    }
+                    &-content{
+                        display: flex;
+                        flex-direction: column;
+                        width: 400px;
+                        height: 150px;
+                        &-img{
+                            width: 100%;
+                            height: 150px;
+                        }
+                        &-txt{
+                            font-size: 15px;
+                            padding: 0.5vw;
+                            text-align: left;
+                        }
+                        .adresse{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*Large*/
+@media screen and (min-width: 991px) {
+    .search{
+        &--container{
+            &-inputbox{
+                &-input{
+                    font-size: 20px;
+                    padding: 10px;
+                }
+                &-button{
+                    font-size: 20px;
+                    padding: 15px;
+                }
+            }
+            &-filter{
+                width: 50%;
+                &-selectbox {
+                    width: 70%;
+                }
+                &-select {
+                    width: 45%;
+                }
+                &-category, &-type{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .result{
+        &--container{
+            &-scroll {
+                &-box {
+                    &-img {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .search{
+        &--container {
+            &-filter {
+                &-select {
+                    width: 35%;
+                }
+            }
+        }
+    }
+}

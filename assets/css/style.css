@@ -2135,6 +2135,7 @@ textarea {
   transform: scale(0.8); }
 
 .carousel-swiper-beta .legend h2 {
+  margin-top: 100%;
   font-size: 2.2rem; }
 
 .carousel-swiper-beta .legend p {
@@ -2158,8 +2159,6 @@ textarea {
   transition: 0.3s;
   top: 0;
   color: #ffffff;
-  padding: 10px;
-  padding-top: 40%;
   text-align: center;
   left: 0;
   height: 100%;
@@ -5520,7 +5519,8 @@ h1, h2, h3, h4 {
   margin: 0; }
 
 .contact-right div {
-  margin-top: 20px; }
+  margin-top: 20px;
+  position: relative; }
 
 .contact-right img {
   position: absolute;
@@ -5644,8 +5644,6 @@ h1, h2, h3, h4 {
     left: 0%;
     top: -17vh;
     width: 90%; }
-  .carousel-swiper-beta .slider-container .legend {
-    padding-top: 45%; }
   .testimonials .swiper-container.carousel-swiper-beta.slider-container {
     margin-left: 0px; }
   .testimonials .items-navigation {

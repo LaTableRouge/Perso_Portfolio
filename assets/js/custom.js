@@ -362,5 +362,5 @@ function loadFunction() {
         setTimeout(()=>{
             document.getElementById("loader").style.display = "none";
         }, 500);
-  }, 6000);
+  }, 4000);
 }

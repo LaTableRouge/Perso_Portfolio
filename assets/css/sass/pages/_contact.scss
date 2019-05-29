@@ -1,0 +1,15 @@
+.contact-right div {
+    a{
+        font-size: 1.50rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .contact-right div {
+        a{
+            font-size: 1.20rem;
+            font-weight: 700;
+        }
+    }
+}

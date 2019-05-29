@@ -23,6 +23,116 @@
   src: url("./assets/fonts/opensans/opensans-Bold-webfont.eot#iefix");
   src: url("./assets/fonts/opensans/opensans-Bold-webfont.eot#iefix") format("eot"), url("./assets/fonts/opensans/opensans-Bold-webfont.ttf#iefix") format("truetype"), url("./assets/fonts/opensans/opensans-Bold-webfont.woff#iefix") format("woff"); }
 
+@font-face {
+  font-family: "Monserrat-Bold";
+  src: url("./assets/fonts/monserrat/Montserrat-Bold.eot#iefix");
+  src: url("./assets/fonts/monserrat/Montserrat-Bold.eot#iefix") format("eot"), url("./assets/fonts/monserrat/Montserrat-Bold.ttf#iefix") format("truetype"), url("./assets/fonts/monserrat/Montserrat-Bold.woff#iefix") format("woff"), url("./assets/fonts/monserrat/Montserrat-Bold.woff2#iefix") format("woff2"); }
+
+@font-face {
+  font-family: "Monserrat-Italic";
+  src: url("./assets/fonts/monserrat/Montserrat-Italic.eot#iefix");
+  src: url("./assets/fonts/monserrat/Montserrat-Italic.eot#iefix") format("eot"), url("./assets/fonts/monserrat/Montserrat-Italic.ttf#iefix") format("truetype"), url("./assets/fonts/monserrat/Montserrat-Italic.woff#iefix") format("woff"), url("./assets/fonts/monserrat/Montserrat-Italic.woff2#iefix") format("woff2"); }
+
+@font-face {
+  font-family: "Monserrat-BoldItalic";
+  src: url("./assets/fonts/monserrat/Montserrat-BoldItalic.eot#iefix");
+  src: url("./assets/fonts/monserrat/Montserrat-BoldItalic.eot#iefix") format("eot"), url("./assets/fonts/monserrat/Montserrat-BoldItalic.ttf#iefix") format("truetype"), url("./assets/fonts/monserrat/Montserrat-BoldItalic.woff#iefix") format("woff"), url("./assets/fonts/monserrat/Montserrat-BoldItalic.woff2#iefix") format("woff2"); }
+
+@font-face {
+  font-family: "Monserrat-Regular";
+  src: url("./assets/fonts/monserrat/Montserrat-Regular.eot#iefix");
+  src: url("./assets/fonts/monserrat/Montserrat-Regular.eot#iefix") format("eot"), url("./assets/fonts/monserrat/Montserrat-Regular.ttf#iefix") format("truetype"), url("./assets/fonts/monserrat/Montserrat-Regular.woff#iefix") format("woff"), url("./assets/fonts/monserrat/Montserrat-Regular.woff2#iefix") format("woff2"); }
+
+@font-face {
+  font-family: "Monserrat-Medium";
+  src: url("./assets/fonts/monserrat/Montserrat-Medium.eot#iefix");
+  src: url("./assets/fonts/monserrat/Montserrat-Medium.eot#iefix") format("eot"), url("./assets/fonts/monserrat/Montserrat-Medium.ttf#iefix") format("truetype"), url("./assets/fonts/monserrat/Montserrat-Medium.woff#iefix") format("woff"), url("./assets/fonts/monserrat/Montserrat-Medium.woff2#iefix") format("woff2"); }
+
+@font-face {
+  font-family: "Cardo-Bold";
+  src: url("./assets/fonts/cardo/Cardo-Bold.ttf#iefix");
+  src: url("./assets/fonts/cardo/Cardo-Bold.ttf#iefix") format("truetype"); }
+
+@font-face {
+  font-family: "Cardo-Italic";
+  src: url("./assets/fonts/cardo/Cardo-Italic.ttf#iefix");
+  src: url("./assets/fonts/cardo/Cardo-Italic.ttf#iefix") format("truetype"); }
+
+@font-face {
+  font-family: "Cardo-Regular";
+  src: url("./assets/fonts/cardo/Cardo-Regular.ttf#iefix");
+  src: url("./assets/fonts/cardo/Cardo-Regular.ttf#iefix") format("truetype"); }
+
+@font-face {
+  font-family: "Chivo-Black";
+  src: url("./assets/fonts/cardo/Chivo-Black.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-Black.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-BlackItalic";
+  src: url("./assets/fonts/cardo/Chivo-BlackItalic.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-BlackItalic.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-Bold";
+  src: url("./assets/fonts/cardo/Chivo-Bold.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-Bold.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-BoldItalic";
+  src: url("./assets/fonts/cardo/Chivo-BoldItalic.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-BoldItalic.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-ExtraBold";
+  src: url("./assets/fonts/cardo/Chivo-ExtraBold.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-ExtraBold.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-ExtraBoldItalic";
+  src: url("./assets/fonts/cardo/Chivo-ExtraBoldItalic.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-ExtraBoldItalic.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-Italic";
+  src: url("./assets/fonts/cardo/Chivo-Italic.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-Italic.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-Light";
+  src: url("./assets/fonts/cardo/Chivo-Light.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-Light.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-LightItalic";
+  src: url("./assets/fonts/cardo/Chivo-LightItalic.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-LightItalic.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-Medium";
+  src: url("./assets/fonts/cardo/Chivo-Medium.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-Medium.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-MediumItalic";
+  src: url("./assets/fonts/cardo/Chivo-MediumItalic.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-MediumItalic.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-Regular";
+  src: url("./assets/fonts/cardo/Chivo-Regular.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-Regular.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-Thin";
+  src: url("./assets/fonts/cardo/Chivo-Thin.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-Thin.otf#iefix") format("otf"); }
+
+@font-face {
+  font-family: "Chivo-ThinItalic";
+  src: url("./assets/fonts/cardo/Chivo-ThinItalic.otf#iefix");
+  src: url("./assets/fonts/cardo/Chivo-ThinItalic.otf#iefix") format("otf"); }
+
 /* ======= Base style ========== */
 body {
   font-family: "Open Sans", "Opensans", "Roboto", "Helvetica", "futura-pt", -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
@@ -38,7 +148,12 @@ ul, li {
   margin: 0; }
 
 iframe {
-  border: none; }
+  border: none;
+  overflow: hidden; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px; }
 
 a {
   color: white;
@@ -2579,10 +2694,10 @@ textarea {
   padding-left: 10px; }
 
 .navbar-sidebar .social a {
-  width: 36px;
-  height: 36px;
+  width: 46px;
+  height: 46px;
   display: block;
-  line-height: 36px;
+  line-height: 52px;
   text-align: center;
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.5);
@@ -2592,7 +2707,7 @@ textarea {
   color: #ffffff; }
 
 .navbar-sidebar .social .icon {
-  font-size: 18px; }
+  font-size: 25px; }
 
 @media (min-width: 768px) {
   .page-header-alpha {
@@ -3541,7 +3656,7 @@ textarea {
   left: 16px;
   z-index: 10;
   bottom: 8px;
-  font-size: 0.75rem; }
+  font-size: 1rem; }
 
 .page-footer .footer-left span:nth-child(1) {
   margin-right: 15px; }
@@ -3586,7 +3701,7 @@ textarea {
 
 .page-footer .footer-right p {
   margin-bottom: 0;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.5); }
 
 @media (min-width: 768px) {
@@ -5715,6 +5830,15 @@ h1, h2, h3, h4 {
     opacity: 0.12;
     width: 100%; } }
 
+.contact-right div a {
+  font-size: 1.50rem;
+  font-weight: 700; }
+
+@media screen and (max-width: 576px) {
+  .contact-right div a {
+    font-size: 1.20rem;
+    font-weight: 700; } }
+
 @media screen and (min-width: 769px) {
   #itempage {
     margin: unset; } }
@@ -5786,36 +5910,36 @@ body {
     position: fixed; } }
 
 .text-flicker-out-glow-1 {
-  -webkit-animation: text-flicker-out-glow 2.5s linear 0s reverse both;
-  animation: text-flicker-out-glow 2.5s linear 0s reverse both; }
+  -webkit-animation: text-flicker-out-glow 2s linear 0s reverse both;
+  animation: text-flicker-out-glow 2s linear 0s reverse both; }
 
 .text-flicker-out-glow-2 {
-  -webkit-animation: text-flicker-out-glow 2.5s linear 0.5s reverse both;
-  animation: text-flicker-out-glow 2.5s linear 0.5s reverse both; }
+  -webkit-animation: text-flicker-out-glow 2s linear 0.3s reverse both;
+  animation: text-flicker-out-glow 2s linear 0.3s reverse both; }
 
 .text-flicker-out-glow-3 {
-  -webkit-animation: text-flicker-out-glow 2.5s linear 1s reverse both;
-  animation: text-flicker-out-glow 2.5s linear 1s reverse both; }
+  -webkit-animation: text-flicker-out-glow 2s linear 0.6s reverse both;
+  animation: text-flicker-out-glow 2s linear 0.6s reverse both; }
 
 .text-flicker-out-glow-4 {
-  -webkit-animation: text-flicker-out-glow 2.5s linear 1.5s reverse both;
-  animation: text-flicker-out-glow 2.5s linear 1.5s reverse both; }
+  -webkit-animation: text-flicker-out-glow 2s linear 0.9s reverse both;
+  animation: text-flicker-out-glow 2s linear 0.9s reverse both; }
 
 .text-flicker-out-glow-5 {
-  -webkit-animation: text-flicker-out-glow 2.5s linear 2s reverse both;
-  animation: text-flicker-out-glow 2.5s linear 2s reverse both; }
+  -webkit-animation: text-flicker-out-glow 2s linear 1.2s reverse both;
+  animation: text-flicker-out-glow 2s linear 1.2s reverse both; }
 
 .text-flicker-out-glow-6 {
-  -webkit-animation: text-flicker-out-glow 2.5s linear 2.5s reverse both;
-  animation: text-flicker-out-glow 2.5s linear 2.5s reverse both; }
+  -webkit-animation: text-flicker-out-glow 2s linear 1.5s reverse both;
+  animation: text-flicker-out-glow 2s linear 1.5s reverse both; }
 
 .text-flicker-out-glow-7 {
-  -webkit-animation: text-flicker-out-glow 2.5s linear 3s reverse both;
-  animation: text-flicker-out-glow 2.5s linear 3s reverse both; }
+  -webkit-animation: text-flicker-out-glow 2s linear 1.8s reverse both;
+  animation: text-flicker-out-glow 2s linear 1.8s reverse both; }
 
 .text-flicker-out-glow-8 {
-  -webkit-animation: text-flicker-out-glow 2.5s linear 3.5s reverse both;
-  animation: text-flicker-out-glow 2.5s linear 3.5s reverse both; }
+  -webkit-animation: text-flicker-out-glow 2s linear 2s reverse both;
+  animation: text-flicker-out-glow 2s linear 2s reverse both; }
 
 /* ----------------------------------------------
  * Generated by Animista on 2019-5-27 15:32:2

@@ -16,8 +16,12 @@ ul, li {
 
 iframe {
   border: none;
+  overflow:hidden;
 }
-
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
 a {
   color: white;
   text-decoration: none;

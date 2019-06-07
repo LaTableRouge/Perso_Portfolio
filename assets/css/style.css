@@ -285,7 +285,8 @@
 
 /* ======= Base style ========== */
 body {
-  font-family: "Open Sans", "Opensans", "Roboto", "Helvetica", "futura-pt", -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 300;
   font-size: 1rem;
   background-color: #ffffff;
   color: #1d1d1d;
@@ -312,10 +313,12 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: wheat; }
+  color: white; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", "Opensans", "Roboto", "Helvetica", -apple-system, system-ui, BlinkMacSystemFont, sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase; }
 
 h3, h4 {
   font-weight: normal; }
@@ -3807,6 +3810,23 @@ textarea {
   z-index: 10;
   bottom: 8px;
   font-size: 1rem; }
+  .page-footer .footer-left a {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    display: block; }
+    .page-footer .footer-left a .note {
+      -webkit-transition: color 0.5s;
+      -o-transition: color 0.5s;
+      transition: color 0.5s; }
+    .page-footer .footer-left a:hover {
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5); }
+      .page-footer .footer-left a:hover .note {
+        color: white; }
 
 .page-footer .footer-left span:nth-child(1) {
   margin-right: 15px; }
@@ -3821,7 +3841,6 @@ textarea {
 
 .page-footer .footer-left p {
   margin-bottom: 0;
-  font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.5); }
 
 .page-footer .footer-left p .marked {
@@ -3834,9 +3853,23 @@ textarea {
   z-index: 10;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex; }
+  display: inline-flex;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
+  .page-footer .footer-right:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5); }
+    .page-footer .footer-right:hover .note {
+      color: white; }
 
 .page-footer .footer-right .note {
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
   position: relative;
   top: 3px; }
 
@@ -5979,6 +6012,63 @@ h1, h2, h3, h4 {
     top: 30px;
     opacity: 0.12;
     width: 100%; } }
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate; }
 
 .contact-right div a {
   font-size: 1.50rem;

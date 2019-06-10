@@ -236,12 +236,18 @@
     bottom: 8px;
     right: 16px;
     z-index: 10;
-    display: inline-flex;
-    transition: transform 0.5s;
-    &:hover{
-        transform: scale(1.5);
+    // display: inline-flex;
+    a{
+        transition: transform 0.5s;
+        display: block;
         .note{
-            color: white;
+            transition: color 0.5s;
+        }
+        &:hover{
+            transform: scale(1.5);
+            .note{
+                color: white;
+            }
         }
     }
 }

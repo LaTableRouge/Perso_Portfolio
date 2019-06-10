@@ -62,3 +62,34 @@
     -webkit-animation-direction: normal, alternate;
     animation-direction: normal, alternate;
   }
+
+@media screen and (max-width: 991px){
+  .contact-left{
+    display: none;
+  }
+}
+
+.shine {
+	background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+	-webkit-background-size: 150px;
+	-webkit-background-clip: text;
+	-webkit-animation-name: shine;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes shine {
+	0%, 10% {
+		background-position: -1000px;
+	}
+	20% {
+		background-position: -200px;
+	}
+	90% {
+		background-position: 400px;
+	}
+	100% {
+		background-position: 1000px;
+	}
+}

@@ -5788,17 +5788,18 @@ h1, h2, h3, h4 {
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate; }
 
-@media screen and (max-width: 991px) {
-  .contact-left {
-    display: none; } }
-
 .shine {
   background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
   -webkit-background-size: 150px;
+  background-size: 150px;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-animation-name: shine;
+  animation-name: shine;
   -webkit-animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); }
 
 @-webkit-keyframes shine {
@@ -5820,6 +5821,22 @@ h1, h2, h3, h4 {
     background-position: 400px; }
   100% {
     background-position: 1000px; } }
+
+@media screen and (max-width: 990px) {
+  .contact-left {
+    display: none; }
+  .page-footer {
+    display: none; } }
+
+@media screen and (min-width: 991px) {
+  .resumeToHide {
+    display: none; } }
+
+.resumeToHide a {
+  margin: 0 1rem; }
+  .resumeToHide a p {
+    font-size: 1.5rem;
+    color: white; }
 
 .contact-right div a {
   font-size: 1.50rem;

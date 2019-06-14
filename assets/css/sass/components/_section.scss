@@ -999,6 +999,11 @@
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
+    font-family: Acumin-Regular;
+    font-weight: lighter;
+    strong{
+        font-family: Acumin-Bold;
+    }
 }
 
 .section-home .home-title:before {
@@ -1007,7 +1012,7 @@
     background: #fff;
     width: 40%;
     height: 2px;
-    margin: 40px auto 5px;
+    margin: 40px auto 20px;
 }
 
 .section-home .home-title:after {

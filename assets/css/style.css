@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Acumin-Regular";
+  src: url("../fonts/acumin/Acumin-RPro.otf");
+  src: url("../fonts/acumin/Acumin-RPro.otf") format("opentype"); }
+
+@font-face {
+  font-family: "Acumin-Italic";
+  src: url("../fonts/acumin/Acumin-ItPro.otf#iefix");
+  src: url("../fonts/acumin/Acumin-ItPro.otf#iefix") format("opentype"); }
+
+@font-face {
+  font-family: "Acumin-Bold";
+  src: url("../fonts/acumin/Acumin-BdPro.otf#iefix");
+  src: url("../fonts/acumin/Acumin-BdPro.otf#iefix") format("opentype"); }
+
+@font-face {
+  font-family: "Acumin-BoldItalic";
+  src: url("../fonts/acumin/Acumin-BdItPro.otf#iefix");
+  src: url("../fonts/acumin/Acumin-BdItPro.otf#iefix") format("opentype"); }
+
 /* ======= Base style ========== */
 body {
   font-family: 'Chivo', sans-serif;
@@ -9,9 +29,12 @@ body {
   padding: 0;
   letter-spacing: 0.02em; }
 
-ul, li {
-  list-style: none outside none;
-  margin: 0; }
+ul li {
+  list-style: none outside none; }
+
+ol {
+  margin: 0 0 1rem 0;
+  padding-left: 17px; }
 
 iframe {
   border: none;
@@ -4507,7 +4530,11 @@ textarea {
 .section-home .home-title {
   font-size: 3rem;
   text-transform: uppercase;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-family: Acumin-Regular;
+  font-weight: lighter; }
+  .section-home .home-title strong {
+    font-family: Acumin-Bold; }
 
 .section-home .home-title:before {
   content: '';
@@ -4515,7 +4542,7 @@ textarea {
   background: #fff;
   width: 40%;
   height: 2px;
-  margin: 40px auto 5px; }
+  margin: 40px auto 20px; }
 
 .section-home .home-title:after {
   content: '';
@@ -5822,6 +5849,31 @@ h1, h2, h3, h4 {
   100% {
     background-position: 1000px; } }
 
+.animateTxt {
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(#fff), to(#000));
+  background: -webkit-linear-gradient(left, #000, #fff, #000);
+  background: -o-linear-gradient(left, #000, #fff, #000);
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-animation: animate 5s linear infinite;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0); }
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: -500%; }
+  100% {
+    background-position: 500%; } }
+
+@keyframes animate {
+  0% {
+    background-position: -500%; }
+  100% {
+    background-position: 500%; } }
+
 @media screen and (max-width: 990px) {
   .contact-left {
     display: none; }
@@ -5854,6 +5906,12 @@ h1, h2, h3, h4 {
 @media screen and (max-width: 768px) {
   #itempage {
     margin: 0 2%; } }
+
+.item-buttons {
+  margin-top: 30px; }
+
+.article-content h4 {
+  margin-top: 1rem; }
 
 #projects-desktop {
   display: none; }

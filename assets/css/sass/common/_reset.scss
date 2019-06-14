@@ -11,9 +11,14 @@ body {
   letter-spacing: 0.02em;
 }
 
-ul, li {
-  list-style: none outside none;
-  margin: 0;
+ul{
+  li{
+    list-style: none outside none;
+  }
+}
+ol{
+  margin: 0 0 1rem 0;
+  padding-left: 17px;
 }
 
 iframe {

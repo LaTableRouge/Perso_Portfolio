@@ -338,11 +338,11 @@
 // 	src: url("../fonts/acumin/Acumin-ItPro.otf#iefix");
 // 	src: url("../fonts/acumin/Acumin-ItPro.otf#iefix") format("opentype")
 // }
-// @font-face {
-// 	font-family: "Acumin-Bold";
-// 	src: url("../fonts/acumin/Acumin-BdPro.otf#iefix");
-// 	src: url("../fonts/acumin/Acumin-BdPro.otf#iefix") format("opentype")
-// }
+@font-face {
+	font-family: "Acumin-Bold";
+	src: url("../fonts/acumin/Acumin-BdPro.otf#iefix");
+	src: url("../fonts/acumin/Acumin-BdPro.otf#iefix") format("opentype")
+}
 // @font-face {
 // 	font-family: "Acumin-BoldItalic";
 // 	src: url("../fonts/acumin/Acumin-BdItPro.otf#iefix");

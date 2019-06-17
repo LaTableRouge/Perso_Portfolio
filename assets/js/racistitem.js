@@ -3,34 +3,25 @@
 function racist(){
     let pageCover = document.getElementById("page-cover");
         pageCover.classList.toggle("is-racist");
-
-    let nav = document.getElementById("fp-nav");
-        nav.classList.toggle("is-racist-nav");
     
-    let navMenu = document.getElementById("navMenuIcon");
-        navMenu.classList.toggle("is-racist-menu");
-    
-    let menu = document.getElementById("navbarMenu");
-        menu.classList.toggle("is-racist-menu");
-
     let social = document.getElementById("social");
         social.classList.toggle("is-racist-nav-social");
     
-    let contact = document.getElementById("message_form");
-        contact.classList.toggle("is-racist-contact")
-
-    let logob = document.getElementById("logo-black");
-        logob.classList.toggle("is-racist-logo-black");
-
-    let logow = document.getElementById("logo-white");
-        logow.classList.toggle("is-racist-logo-white");
-
     let buttonb = document.getElementById("changeColor-Black");
         buttonb.classList.toggle("is-racist-button-black");
 
     let buttonw = document.getElementById("changeColor-White");
         buttonw.classList.toggle("is-racist-button-white");
 
+    let prev = document.getElementById("nav-prev");
+        prev.classList.toggle("is-racist-nav-prev");
+    
+    let next = document.getElementById("nav-next");
+        next.classList.toggle("is-racist-nav-next");
+
+    let menu = document.getElementById("navbarMenu");
+        menu.classList.toggle("is-racist-menuitem");
+    
     let p = document.getElementsByTagName("p");
         for (let i = 0; i < p.length; i++) {
             p[i].classList.toggle("is-racist-content");
@@ -64,16 +55,8 @@ function racist(){
             h6[i].classList.toggle("is-racist-content");
         }
 
-    let iframe = document.getElementById("iframe");
-    let slideshow =  iframe.contentWindow.document.getElementById("slideshow");
-        slideshow.classList.toggle("is-racist-slideshow");
-    let slideshowContent = iframe.contentWindow.document.getElementsByClassName("slide__title-wrap");
-        for (let i = 0; i < slideshowContent.length; i++) {
-            slideshowContent[i].classList.toggle("is-racist-slideshow-content")
-        }
-
-    let slidebutton  = document.getElementsByClassName("swiper-pagination-bullet");
-        for (let i = 0; i < slidebutton.length; i++) {
-            slidebutton[i].classList.toggle("is-racist-slideshow-button");
+    let li = document.getElementsByTagName("li");
+        for (let i = 0; i < li.length; i++) {
+            li[i].classList.toggle("is-racist-content");
         }
 }

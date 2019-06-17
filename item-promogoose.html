@@ -98,7 +98,7 @@
             </ul>
         </nav>
 
-        <nav class="navbar-sidebar ">
+        <nav id="social" class="navbar-sidebar ">
             <ul class="social">
                 <li>
                     <a href="https://www.linkedin.com/in/victor-diana-409268101/">
@@ -123,7 +123,7 @@
 
 <!-- Start Content -->
 <main class="page-main page-fullpage main-anim" id="itempage promogoose">
-    <div class="section section-twoside fp-auto-height-responsive section-item padding-none" data-section="item-alpha">
+    <div id="page-cover" class="section section-twoside fp-auto-height-responsive section-item padding-none" data-section="item-alpha">
         <div class="section-cover-tier mask-black"></div>
         <div class="section-wrapper largewidth">
             <div class="item row">
@@ -136,6 +136,13 @@
                                     <div class="info-small">
                                         <p><i class="icon ion-calendar"></i> January 2019 - March 2019</p>
                                         <p><i class="icon ion-link"></i> <a href="https://mlnop.ovh/promogoose/public">www.promogoose.fr</a></p>
+                                    </div>
+
+                                    <div class="title-desc-color">
+                                        <h4>Change to 
+                                            <span id="changeColor-White" class="change-color animateTxt" onclick="racist()">White</span>
+                                            <span id="changeColor-Black" class="change-color animateTxt" onclick="racist()">Black</span>
+                                        </h4>
                                     </div>
 
                                     <div class="item row justify-content-between mt-5">
@@ -208,11 +215,11 @@
 
                         <div class="btns-action row item-buttons">
                             <div class="col-md-12 item-buttons-next">
-                                <a class="btn btn-outline-white border-0" href="item-setec.html">
+                                <a id="nav-prev" class="btn btn-outline-white border-0" href="item-setec.html">
                                     <i class="icon fa fa-arrow-circle-left mr-2"></i>
                                     <span class="txt">Prev</span>
                                 </a>
-                                <a class="btn btn-outline-white border-0" href="item-espace-charpente.html">
+                                <a id="nav-next" class="btn btn-outline-white border-0" href="item-espace-charpente.html">
                                     <span class="txt">Next</span>
                                     <i class="icon fa fa-arrow-circle-right ml-2"></i>
                                 </a>
@@ -268,5 +275,6 @@
 
 <!-- Main Script files -->
 <script src="assets/js/custom.js"></script>
+<script src="assets/js/racistitem.js"></script>
 </body>
 </html>

@@ -12,6 +12,72 @@
         &::before{
             color: black!important;
         }
+        &-h2{
+            color: black!important;
+            &::before{
+                color: black!important;
+                background: black !important;
+            }
+            &::after{
+                background: black !important;
+            }
+        }
+    }
+    &-menu{
+        .menu-icon{
+            background: rgba(0, 0, 0, 0.2);
+            .bars{
+                span{
+                    background: #000000;
+                }
+            }
+        }
+        .menu-visible{
+            background: rgba(255, 255, 255, 0.2);
+            .bars{
+                span{
+                    background: #ffffff;
+                }
+            }
+        }
+        .navbar-mainmenu{
+            .navbar-nav{
+                .nav-item{
+                    a{
+                        background-color: #1d1d1d;
+                        color: white !important;
+                    }
+                }
+            }
+        }
+    }
+    &-menuitem{
+        .menu-icon{
+            background: rgba(0, 0, 0, 0.2);
+            .bars{
+                span{
+                    background: #000000;
+                }
+            }
+        }
+        .menu-visible{
+            background: rgba(255, 255, 255, 0.2);
+            .bars{
+                span{
+                    background: #ffffff;
+                }
+            }
+        }
+        .navbar-mainmenu{
+            .navbar-nav{
+                .nav-item{
+                    a{
+                        background-color: transparent;
+                        color: white !important;
+                    }
+                }
+            }
+        }
     }
     &-nav{
         span{
@@ -26,11 +92,24 @@
                 background: rgba(0, 0, 0, 0.1)!important;
             }
         }
+        &-prev, &-next{
+            &:hover{
+                box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+                background: #000000;
+                color: white !important;
+            }
+        }
     }
     &-logo-black{
         display: block!important;
     }
     &-logo-white{
+        display: none!important;
+    }
+    &-button-black{
+        display: inline-flex!important;
+    }
+    &-button-white{
         display: none!important;
     }
     &-contact{
@@ -48,6 +127,27 @@
                 color: white!important;
                 background-color: black!important;
             }
+        }
+    }
+    &-slideshow{
+        &-button{
+            color: black;
+        }
+    }
+
+
+    &--item{
+        .section{
+            background-color: white;
+        }
+    }
+
+}
+
+#slide-item{
+    a{
+        h2,p{
+            color: white !important;
         }
     }
 }

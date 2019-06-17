@@ -13,6 +13,11 @@
   src: url("../fonts/acumin/Acumin-RPro.otf");
   src: url("../fonts/acumin/Acumin-RPro.otf") format("opentype"); }
 
+@font-face {
+  font-family: "Acumin-Bold";
+  src: url("../fonts/acumin/Acumin-BdPro.otf#iefix");
+  src: url("../fonts/acumin/Acumin-BdPro.otf#iefix") format("opentype"); }
+
 /* ======= Base style ========== */
 body {
   font-family: 'Chivo-Thin', sans-serif;
@@ -5765,6 +5770,35 @@ h1, h2, h3, h4 {
       color: black; }
     .is-racist-content::before {
       color: black !important; }
+    .is-racist-content-h2 {
+      color: black !important; }
+      .is-racist-content-h2::before {
+        color: black !important;
+        background: black !important; }
+      .is-racist-content-h2::after {
+        background: black !important; }
+  .is-racist-menu .menu-icon {
+    background: rgba(0, 0, 0, 0.2); }
+    .is-racist-menu .menu-icon .bars span {
+      background: #000000; }
+  .is-racist-menu .menu-visible {
+    background: rgba(255, 255, 255, 0.2); }
+    .is-racist-menu .menu-visible .bars span {
+      background: #ffffff; }
+  .is-racist-menu .navbar-mainmenu .navbar-nav .nav-item a {
+    background-color: #1d1d1d;
+    color: white !important; }
+  .is-racist-menuitem .menu-icon {
+    background: rgba(0, 0, 0, 0.2); }
+    .is-racist-menuitem .menu-icon .bars span {
+      background: #000000; }
+  .is-racist-menuitem .menu-visible {
+    background: rgba(255, 255, 255, 0.2); }
+    .is-racist-menuitem .menu-visible .bars span {
+      background: #ffffff; }
+  .is-racist-menuitem .navbar-mainmenu .navbar-nav .nav-item a {
+    background-color: transparent;
+    color: white !important; }
   .is-racist-nav span {
     background-color: black !important; }
     .is-racist-nav span::after {
@@ -5772,9 +5806,20 @@ h1, h2, h3, h4 {
       background: rgba(0, 0, 0, 0.15) !important; }
   .is-racist-nav-social a {
     background: rgba(0, 0, 0, 0.1) !important; }
+  .is-racist-nav-prev:hover, .is-racist-nav-next:hover {
+    -webkit-box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+    background: #000000;
+    color: white !important; }
   .is-racist-logo-black {
     display: block !important; }
   .is-racist-logo-white {
+    display: none !important; }
+  .is-racist-button-black {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important; }
+  .is-racist-button-white {
     display: none !important; }
   .is-racist-contact label {
     color: black !important; }
@@ -5787,6 +5832,13 @@ h1, h2, h3, h4 {
     .is-racist-contact button:hover {
       color: white !important;
       background-color: black !important; }
+  .is-racist-slideshow-button {
+    color: black; }
+  .is-racist--item .section {
+    background-color: white; }
+
+#slide-item a h2, #slide-item a p {
+  color: white !important; }
 
 /* Bob */
 @-webkit-keyframes hvr-bob {
@@ -5926,6 +5978,14 @@ h1, h2, h3, h4 {
 #logo-white {
   display: unset; }
 
+#changeColor-White {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+#changeColor-Black {
+  display: none; }
+
 .contact-right div a {
   font-size: 1.50rem;
   font-weight: 700; }
@@ -5955,6 +6015,9 @@ h1, h2, h3, h4 {
   -webkit-transform: unset !important;
   -ms-transform: unset !important;
   transform: unset !important; }
+
+.title-desc-color h4 {
+  text-align: center; }
 
 #projects-desktop {
   display: none; }

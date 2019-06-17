@@ -64,14 +64,14 @@
 // 	url("../fonts/montserrat/Montserrat-BoldItalic.woff#iefix") format("woff"), 
 // 	url("../fonts/montserrat/Montserrat-BoldItalic.woff2#iefix") format("woff2");
 // }
-// @font-face {
-// 	font-family: "Montserrat-Regular";
-// 	src: url("../fonts/montserrat/Montserrat-Regular.eot#iefix");
-// 	src: url("../fonts/montserrat/Montserrat-Regular.eot#iefix") format("eot"),
-// 	url("../fonts/montserrat/Montserrat-Regular.ttf#iefix") format("truetype"), 
-// 	url("../fonts/montserrat/Montserrat-Regular.woff#iefix") format("woff"), 
-// 	url("../fonts/montserrat/Montserrat-Regular.woff2#iefix") format("woff2");
-// }
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url("../fonts/montserrat/Montserrat-Regular.eot#iefix");
+	src: url("../fonts/montserrat/Montserrat-Regular.eot#iefix") format("eot"),
+	url("../fonts/montserrat/Montserrat-Regular.ttf#iefix") format("truetype"), 
+	url("../fonts/montserrat/Montserrat-Regular.woff#iefix") format("woff"), 
+	url("../fonts/montserrat/Montserrat-Regular.woff2#iefix") format("woff2");
+}
 // @font-face {
 // 	font-family: "Montserrat-Medium";
 // 	src: url("../fonts/montserrat/Montserrat-Medium.eot#iefix");
@@ -157,11 +157,11 @@
 // 	src: url("../fonts/chivo/Chivo-Regular.otf#iefix");
 // 	src: url("../fonts/chivo/Chivo-Regular.otf#iefix") format("opentype")
 // }
-// @font-face {
-// 	font-family: "Chivo-Thin";
-// 	src: url("../fonts/chivo/Chivo-Thin.otf#iefix");
-// 	src: url("../fonts/chivo/Chivo-Thin.otf#iefix") format("opentype")
-// }
+@font-face {
+	font-family: "Chivo-Thin";
+	src: url("../fonts/chivo/Chivo-Thin.otf#iefix");
+	src: url("../fonts/chivo/Chivo-Thin.otf#iefix") format("opentype")
+}
 // @font-face {
 // 	font-family: "Chivo-ThinItalic";
 // 	src: url("../fonts/chivo/Chivo-ThinItalic.otf#iefix");
@@ -333,18 +333,18 @@
 	src: url("../fonts/acumin/Acumin-RPro.otf");
 	src: url("../fonts/acumin/Acumin-RPro.otf") format("opentype")
 }
-@font-face {
-	font-family: "Acumin-Italic";
-	src: url("../fonts/acumin/Acumin-ItPro.otf#iefix");
-	src: url("../fonts/acumin/Acumin-ItPro.otf#iefix") format("opentype")
-}
-@font-face {
-	font-family: "Acumin-Bold";
-	src: url("../fonts/acumin/Acumin-BdPro.otf#iefix");
-	src: url("../fonts/acumin/Acumin-BdPro.otf#iefix") format("opentype")
-}
-@font-face {
-	font-family: "Acumin-BoldItalic";
-	src: url("../fonts/acumin/Acumin-BdItPro.otf#iefix");
-	src: url("../fonts/acumin/Acumin-BdItPro.otf#iefix") format("opentype")
-}
+// @font-face {
+// 	font-family: "Acumin-Italic";
+// 	src: url("../fonts/acumin/Acumin-ItPro.otf#iefix");
+// 	src: url("../fonts/acumin/Acumin-ItPro.otf#iefix") format("opentype")
+// }
+// @font-face {
+// 	font-family: "Acumin-Bold";
+// 	src: url("../fonts/acumin/Acumin-BdPro.otf#iefix");
+// 	src: url("../fonts/acumin/Acumin-BdPro.otf#iefix") format("opentype")
+// }
+// @font-face {
+// 	font-family: "Acumin-BoldItalic";
+// 	src: url("../fonts/acumin/Acumin-BdItPro.otf#iefix");
+// 	src: url("../fonts/acumin/Acumin-BdItPro.otf#iefix") format("opentype")
+// }

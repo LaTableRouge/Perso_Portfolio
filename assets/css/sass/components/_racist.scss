@@ -1,0 +1,53 @@
+.change-color{
+    cursor: pointer;
+}
+.is-racist{
+    background-color: white!important;
+    &-content{
+        color: black!important;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)!important;
+        &:hover{
+            color: black;
+        }
+        &::before{
+            color: black!important;
+        }
+    }
+    &-nav{
+        span{
+            background-color: black!important;
+            &::after{
+                border-color: black!important;
+                background: rgba(0, 0, 0, 0.15)!important;
+            }
+        }
+        &-social{
+            a{
+                background: rgba(0, 0, 0, 0.1)!important;
+            }
+        }
+    }
+    &-logo-black{
+        display: block!important;
+    }
+    &-logo-white{
+        display: none!important;
+    }
+    &-contact{
+        label{
+            color: black!important;
+        }
+        input, textarea{
+            background: rgba(0, 0, 0, 0.1)!important;
+            color: black!important;
+        }
+        button{
+            color: black!important;
+            border: 1px solid rgba(0, 0, 0, 0.2)!important;
+            &:hover{
+                color: white!important;
+                background-color: black!important;
+            }
+        }
+    }
+}

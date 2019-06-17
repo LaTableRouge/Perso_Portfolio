@@ -17,3 +17,11 @@
         margin-top: 1rem;
     }
 }
+
+.item-footer{
+    .footer-left, .footer-right{
+        opacity: 1!important;
+        visibility: unset!important;
+        transform: unset!important;
+    }
+}

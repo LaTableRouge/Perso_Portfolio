@@ -95,7 +95,8 @@
 
     <a class="navbar-brand" href="#home">
       <span class="logo">
-        <img class="light-logo" src="assets/img/logo-white.png" alt="Logo">
+        <img id="logo-white" class="light-logo" src="assets/img/logo-white.png" alt="Logo">
+        <img id="logo-black" class="light-logo" src="assets/img/logo-black.png" alt="Logo">
       </span>
     </a>
 
@@ -119,7 +120,7 @@
             </ul>
         </nav>
 
-        <nav class="navbar-sidebar ">
+        <nav id="social" class="navbar-sidebar ">
             <ul class="social">
                 <li>
                     <a href="https://www.linkedin.com/in/victor-diana-409268101/">
@@ -144,7 +145,7 @@
 
 <!-- Start Cover -->
 <div class="page-cover">
-    <div class="cover-bg-mask bg-color" data-bgcolor="#1D1D1D" style="background-color: rgb(29, 29, 29);"></div>
+    <div id="page-cover" class="cover-bg-mask bg-color" data-bgcolor="#1D1D1D" style="background-color: rgb(29, 29, 29);"></div>
 </div>
 <!--End Cover -->
 
@@ -160,7 +161,7 @@
                     <div class="col-12 col-md-12 text-center">
                         <div class="title-desc">
                             <div class="title-desc-color">
-                                <h4>Change to <span id="changeColor" class="change-color animateTxt" onclick="changeColor()">White</span></h4>
+                                <h4>Change to <span id="changeColor" class="change-color animateTxt" onclick="racist()">White</span></h4>
                             </div>
                             <h2 class="display-4 display-title home-title anim-1">Victor <strong>DIANA</strong></h2>
                             <h4 class="anim-2 opacity-75">Web developer</h4>
@@ -233,7 +234,7 @@
             <div class="section-title center-vh  dir-col text-center">
                 <h2 class="display-4 display-title anim-2 mb-32">Projects</h2>
             </div>
-            <iframe scrolling="no" src="slideshow.html" ></iframe>
+            <iframe id="iframe" scrolling="no" src="slideshow.html" ></iframe>
             <footer class="section-footer scrolldown">
                 <a class="down">
                     <span class="icon"></span>
@@ -289,10 +290,10 @@
                         <li class="slide-item swiper-slide">
                             <div class="item-wrapper">
                                 <div class="illustr">
-                                    <img src="assets/img/slideshow/espace-charpente/slideshow.png"
+                                    <img src="assets/img/slideshow/Zest/slideshow.png"
                                          alt="Image" class="img">
                                 </div>
-                                <a class="legend" href="item-espace-charpente.html">
+                                <a class="legend" href="item-zestore.html">
                                     <h2 class="display-4">Zestore</h2>
                                     <p>WebSite full recast</p>
                                 </a>
@@ -431,5 +432,6 @@
 
 <!-- Main Script files -->
 <script src="assets/js/custom.js"></script>
+<script src="assets/js/racist.js"></script>
 </body>
 </html>

@@ -1,26 +1,21 @@
 @font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/montserrat/Montserrat-Regular.eot#iefix");
+  src: url("../fonts/montserrat/Montserrat-Regular.eot#iefix") format("eot"), url("../fonts/montserrat/Montserrat-Regular.ttf#iefix") format("truetype"), url("../fonts/montserrat/Montserrat-Regular.woff#iefix") format("woff"), url("../fonts/montserrat/Montserrat-Regular.woff2#iefix") format("woff2"); }
+
+@font-face {
+  font-family: "Chivo-Thin";
+  src: url("../fonts/chivo/Chivo-Thin.otf#iefix");
+  src: url("../fonts/chivo/Chivo-Thin.otf#iefix") format("opentype"); }
+
+@font-face {
   font-family: "Acumin-Regular";
   src: url("../fonts/acumin/Acumin-RPro.otf");
   src: url("../fonts/acumin/Acumin-RPro.otf") format("opentype"); }
 
-@font-face {
-  font-family: "Acumin-Italic";
-  src: url("../fonts/acumin/Acumin-ItPro.otf#iefix");
-  src: url("../fonts/acumin/Acumin-ItPro.otf#iefix") format("opentype"); }
-
-@font-face {
-  font-family: "Acumin-Bold";
-  src: url("../fonts/acumin/Acumin-BdPro.otf#iefix");
-  src: url("../fonts/acumin/Acumin-BdPro.otf#iefix") format("opentype"); }
-
-@font-face {
-  font-family: "Acumin-BoldItalic";
-  src: url("../fonts/acumin/Acumin-BdItPro.otf#iefix");
-  src: url("../fonts/acumin/Acumin-BdItPro.otf#iefix") format("opentype"); }
-
 /* ======= Base style ========== */
 body {
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Chivo-Thin', sans-serif;
   font-weight: 300;
   font-size: 1rem;
   background-color: #ffffff;
@@ -54,7 +49,7 @@ a:hover {
   color: white; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat-Regular', sans-serif;
   font-weight: 300;
   text-transform: uppercase; }
 
@@ -5758,6 +5753,41 @@ h1, h2, h3, h4 {
     opacity: 0.12;
     width: 100%; } }
 
+.change-color {
+  cursor: pointer; }
+
+.is-racist {
+  background-color: white !important; }
+  .is-racist-content {
+    color: black !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important; }
+    .is-racist-content:hover {
+      color: black; }
+    .is-racist-content::before {
+      color: black !important; }
+  .is-racist-nav span {
+    background-color: black !important; }
+    .is-racist-nav span::after {
+      border-color: black !important;
+      background: rgba(0, 0, 0, 0.15) !important; }
+  .is-racist-nav-social a {
+    background: rgba(0, 0, 0, 0.1) !important; }
+  .is-racist-logo-black {
+    display: block !important; }
+  .is-racist-logo-white {
+    display: none !important; }
+  .is-racist-contact label {
+    color: black !important; }
+  .is-racist-contact input, .is-racist-contact textarea {
+    background: rgba(0, 0, 0, 0.1) !important;
+    color: black !important; }
+  .is-racist-contact button {
+    color: black !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important; }
+    .is-racist-contact button:hover {
+      color: white !important;
+      background-color: black !important; }
+
 /* Bob */
 @-webkit-keyframes hvr-bob {
   0% {
@@ -5890,6 +5920,12 @@ h1, h2, h3, h4 {
     font-size: 1.5rem;
     color: white; }
 
+#logo-black {
+  display: none; }
+
+#logo-white {
+  display: unset; }
+
 .contact-right div a {
   font-size: 1.50rem;
   font-weight: 700; }
@@ -5912,6 +5948,13 @@ h1, h2, h3, h4 {
 
 .article-content h4 {
   margin-top: 1rem; }
+
+.item-footer .footer-left, .item-footer .footer-right {
+  opacity: 1 !important;
+  visibility: unset !important;
+  -webkit-transform: unset !important;
+  -ms-transform: unset !important;
+  transform: unset !important; }
 
 #projects-desktop {
   display: none; }

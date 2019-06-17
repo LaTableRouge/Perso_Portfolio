@@ -137,6 +137,12 @@
     }
   }
 }
-.home-title{
-  
+
+#logo{
+  &-black{
+    display: none;
+  }
+  &-white{
+    display: unset;
+  }
 }

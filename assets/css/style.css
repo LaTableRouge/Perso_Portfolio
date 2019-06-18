@@ -5758,9 +5758,6 @@ h1, h2, h3, h4 {
     opacity: 0.12;
     width: 100%; } }
 
-.change-color {
-  cursor: pointer; }
-
 .is-racist {
   background-color: white !important; }
   .is-racist-content {
@@ -5816,9 +5813,7 @@ h1, h2, h3, h4 {
   .is-racist-logo-white {
     display: none !important; }
   .is-racist-button-black {
-    display: -webkit-inline-box !important;
-    display: -ms-inline-flexbox !important;
-    display: inline-flex !important; }
+    display: inline-block !important; }
   .is-racist-button-white {
     display: none !important; }
   .is-racist-contact label {
@@ -5839,6 +5834,70 @@ h1, h2, h3, h4 {
 
 #slide-item a h2, #slide-item a p {
   color: white !important; }
+
+.switch {
+  display: none; }
+  .switch-label {
+    margin-bottom: 0;
+    margin-left: 1em; }
+
+.switch + label {
+  cursor: pointer;
+  width: 70px;
+  height: 35px;
+  position: relative;
+  background: #212121;
+  border-radius: 35px;
+  display: inline-block;
+  border: 3px solid #fff;
+  -webkit-transition: all .4s ease-in-out 0s;
+  -o-transition: all .4s ease-in-out 0s;
+  transition: all .4s ease-in-out 0s; }
+
+.switch + label:before {
+  top: 50%;
+  content: '';
+  right: 38px;
+  width: 23px;
+  height: 23px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -11.5px;
+  -webkit-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit; }
+
+.switch:checked + label {
+  background: #212121;
+  border-color: #212121;
+  -webkit-box-shadow: 0 1px 1px rgba(206, 206, 206, 0.5);
+  box-shadow: 0 1px 1px rgba(206, 206, 206, 0.5); }
+
+.switch:checked + label:before {
+  right: 3px;
+  background: #cecece;
+  border-color: transparent;
+  -webkit-box-shadow: 0 3px 3px #000;
+  box-shadow: 0 3px 3px #000; }
+
+.title-desc-color h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 2em 0; }
+  .title-desc-color h4 #changeColor-White {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+  .title-desc-color h4 #changeColor-Black {
+    display: none; }
 
 /* Bob */
 @-webkit-keyframes hvr-bob {
@@ -5977,14 +6036,6 @@ h1, h2, h3, h4 {
 
 #logo-white {
   display: unset; }
-
-#changeColor-White {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex; }
-
-#changeColor-Black {
-  display: none; }
 
 .contact-right div a {
   font-size: 1.50rem;

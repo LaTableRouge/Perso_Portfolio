@@ -59,4 +59,8 @@ function racist(){
         for (let i = 0; i < li.length; i++) {
             li[i].classList.toggle("is-racist-content");
         }
+    let shine = document.getElementsByClassName("shine");
+        for (let i = 0; i < shine.length; i++) {
+            shine[i].classList.toggle("is-racist-shine");
+        }
 }

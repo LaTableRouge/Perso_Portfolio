@@ -139,6 +139,11 @@
         }
     }
 
+    &-shine{
+        background: none !important;
+        color: black !important;
+        -webkit-text-fill-color: unset !important;
+    }
 }
 
 #slide-item{

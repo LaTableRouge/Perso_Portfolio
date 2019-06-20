@@ -5831,6 +5831,10 @@ h1, h2, h3, h4 {
     color: black; }
   .is-racist--item .section {
     background-color: white; }
+  .is-racist-shine {
+    background: none !important;
+    color: black !important;
+    -webkit-text-fill-color: unset !important; }
 
 #slide-item a h2, #slide-item a p {
   color: white !important; }
@@ -5958,14 +5962,13 @@ h1, h2, h3, h4 {
 
 .shine {
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #8d8d8d), color-stop(50%, #fff), color-stop(60%, #8d8d8d));
-  background: -webkit-linear-gradient(left, #8d8d8d 10%, #fff 50%, #8d8d8d 60%);
-  background: -o-linear-gradient(left, #8d8d8d 10%, #fff 50%, #8d8d8d 60%);
-  background: linear-gradient(to right, #8d8d8d 10%, #fff 50%, #8d8d8d 60%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #bebebe), color-stop(50%, #fff), color-stop(60%, #bebebe));
+  background: -webkit-linear-gradient(left, #bebebe 10%, #fff 50%, #bebebe 60%);
+  background: -o-linear-gradient(left, #bebebe 10%, #fff 50%, #bebebe 60%);
+  background: linear-gradient(to right, #bebebe 10%, #fff 50%, #bebebe 60%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;

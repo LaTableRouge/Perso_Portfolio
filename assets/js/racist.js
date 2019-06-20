@@ -76,4 +76,9 @@ function racist(){
         for (let i = 0; i < slidebutton.length; i++) {
             slidebutton[i].classList.toggle("is-racist-slideshow-button");
         }
+
+    let shine = document.getElementsByClassName("shine");
+        for (let i = 0; i < shine.length; i++) {
+            shine[i].classList.toggle("is-racist-shine");
+        }
 }

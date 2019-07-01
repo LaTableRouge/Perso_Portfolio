@@ -5558,6 +5558,14 @@ h1, h2, h3, h4 {
 .contact-left {
   padding-left: 10%; }
 
+.contact-right {
+  padding-left: 0;
+  text-align: center !important;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
 .contact-right p {
   margin: 0; }
 
@@ -5567,10 +5575,10 @@ h1, h2, h3, h4 {
 
 .contact-right img {
   position: absolute;
-  left: -20px;
-  top: 30px;
+  left: 150px;
+  top: -40px;
   opacity: 0.12;
-  width: 80%; }
+  width: 35vw; }
 
 .mb-32 {
   margin-bottom: 32px; }
@@ -5625,10 +5633,10 @@ h1, h2, h3, h4 {
     padding-left: 0%; }
   .contact-right img {
     position: absolute;
-    left: -10px;
-    top: 50px;
+    left: 70px;
+    top: -25px;
     opacity: 0.12;
-    width: 100%; } }
+    width: 75%; } }
 
 @media (max-width: 1024px) {
   .mb-32 {
@@ -5695,10 +5703,10 @@ h1, h2, h3, h4 {
     margin-bottom: 0; }
   .contact-right img {
     position: absolute;
-    left: 140px;
+    left: 42px;
     top: 30px;
     opacity: 0.12;
-    width: 50%; } }
+    width: 75%; } }
 
 @media (max-width: 736px) {
   .item-buttons .item-buttons-purchase, .item-buttons .item-buttons-next {
@@ -5781,10 +5789,10 @@ h1, h2, h3, h4 {
   .is-racist-menu .menu-visible {
     background: rgba(255, 255, 255, 0.2); }
     .is-racist-menu .menu-visible .bars span {
-      background: #ffffff; }
+      background: #000; }
   .is-racist-menu .navbar-mainmenu .navbar-nav .nav-item a {
-    background-color: #1d1d1d;
-    color: white !important; }
+    background-color: white;
+    color: black !important; }
   .is-racist-menuitem .menu-icon {
     background: rgba(0, 0, 0, 0.2); }
     .is-racist-menuitem .menu-icon .bars span {
@@ -6016,21 +6024,23 @@ h1, h2, h3, h4 {
   .page-footer {
     display: none; } }
 
-@media screen and (min-width: 991px) {
-  .resumeToHide {
-    display: none; } }
-
 .resumeToHide a {
   margin: 0 1rem; }
   .resumeToHide a p {
     font-size: 1.5rem;
-    color: white; }
+    color: white;
+    opacity: 1; }
 
 #logo-black {
   display: none; }
 
 #logo-white {
   display: unset; }
+
+@media screen and (min-width: 768px) {
+  .section-title h3 {
+    font-size: 2rem;
+    font-weight: 300; } }
 
 .contact-right div a {
   font-size: 1.50rem;
@@ -6064,6 +6074,26 @@ h1, h2, h3, h4 {
 
 .title-desc-color h4 {
   text-align: center; }
+
+.not-available:hover span {
+  display: block; }
+
+.not-available span {
+  display: none;
+  cursor: initial;
+  width: 100%;
+  text-align: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 5px;
+  position: absolute;
+  background-color: black;
+  top: -8px;
+  left: 0; }
+
+.site-link {
+  position: relative; }
 
 #projects-desktop {
   display: none; }

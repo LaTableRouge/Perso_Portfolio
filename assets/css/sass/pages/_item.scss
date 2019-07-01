@@ -31,3 +31,27 @@
         text-align: center;
     }
 }
+
+.not-available{
+    &:hover{
+        span{
+            display: block; 
+        }
+    }
+    span{
+        display: none;
+        cursor: initial;
+        width: 100%;
+        text-align: center;
+        height: max-content;
+        padding: 5px;
+        position: absolute;
+        background-color: black;
+        top: -8px;
+        left: 0;
+    }
+}
+
+.site-link{
+    position: relative;
+}

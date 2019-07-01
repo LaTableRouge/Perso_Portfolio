@@ -33,7 +33,7 @@
             background: rgba(255, 255, 255, 0.2);
             .bars{
                 span{
-                    background: #ffffff;
+                    background: #000;
                 }
             }
         }
@@ -41,8 +41,8 @@
             .navbar-nav{
                 .nav-item{
                     a{
-                        background-color: #1d1d1d;
-                        color: white !important;
+                        background-color: white;
+                        color: black !important;
                     }
                 }
             }

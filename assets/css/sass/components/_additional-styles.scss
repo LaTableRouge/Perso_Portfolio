@@ -32,6 +32,12 @@
     padding-left: 10%;
 }
 
+.contact-right{
+    padding-left: 0;
+    text-align: center !important;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 .contact-right p {
     margin: 0;
 }
@@ -43,10 +49,10 @@
 
 .contact-right img {
     position: absolute;
-    left: -20px;
-    top: 30px;
+    left: 150px;
+    top: -40px;
     opacity: 0.12;
-    width: 80%;
+    width: 35vw;
 }
 
 .mb-32 {

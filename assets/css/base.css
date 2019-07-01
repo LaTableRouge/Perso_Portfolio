@@ -193,6 +193,24 @@ ul{
 	height: 0;
 	pointer-events: none;
 }
+.not-available:hover span {
+	display: block; 
+}
+  
+  .not-available span {
+	display: none;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	height: -webkit-max-content;
+	height: -moz-max-content;
+	height: max-content;
+	padding: 5px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: black; 
+}
 
 .message {
 	position: relative;
@@ -464,7 +482,7 @@ ul{
 }
 
 .content__subtitle {
-	margin: 0.5rem 0;
+	margin: 1rem 0;
 	font-size: 1.5rem;
 	font-weight: bold;
 }

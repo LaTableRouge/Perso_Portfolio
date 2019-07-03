@@ -416,16 +416,26 @@ class TextScramble {
   // ——————————————————————————————————————————————————
   
   const phrases = [
-    'I love front-end !',
-    'I love front-end !',
-    'I love front-end !',
-    'I love front-end !',
-    'I love front-end !',
-    'I love front-end !',
-    'I love front-end !', 
-    'Luke', 
-    'I AM your father',
-    'Oops wrong line'
+    'I love front-end ...',
+    'I love front-end ...',
+    'I love front-end ...',
+    'I love front-end ...',
+    'I love front-end ...',
+    'I love front-end ...',
+    'I love front-end ...', 
+    'I love front-end ...', 
+    'I love front-end ...', 
+    'Hello there !',
+    'I love front-end ...',
+    'I love front-end ...',
+    'I love front-end ...',
+    'I love front-end ...',
+    'I love front-end ...',
+    'I love front-end ...',
+    'I love front-end ...', 
+    'I love front-end ...', 
+    'I love front-end ...', 
+    'General Kenobi !', 
   ]
   
   const el = document.querySelector('.text')

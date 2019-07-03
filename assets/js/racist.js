@@ -15,9 +15,6 @@ function racist(){
 
     let social = document.getElementById("social");
         social.classList.toggle("is-racist-nav-social");
-    
-    let contact = document.getElementById("message_form");
-        contact.classList.toggle("is-racist-contact")
 
     let logob = document.getElementById("logo-black");
         logob.classList.toggle("is-racist-logo-black");

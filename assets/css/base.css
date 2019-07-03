@@ -563,7 +563,7 @@ ul{
 	}
 	.content__close {
 		left: 42%;
-		top: calc(9.5vh + 1rem);
+		top: calc(9.5vh + 0rem);
 	}
 	.content__number {
 		position: absolute;
@@ -573,10 +573,10 @@ ul{
 	}
 	.content__link{
 		right: 1rem;
-		top: calc(10vh + 1rem);
+		top: calc(10vh + 0rem);
 	}
 	.content__date{
-		top: calc(11vh + 1rem);
+		top: calc(11vh + 0rem);
 		left: 10rem;
 	}
 	.content__title {

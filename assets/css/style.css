@@ -5824,17 +5824,6 @@ h1, h2, h3, h4 {
     display: inline-block !important; }
   .is-racist-button-white {
     display: none !important; }
-  .is-racist-contact label {
-    color: black !important; }
-  .is-racist-contact input, .is-racist-contact textarea {
-    background: rgba(0, 0, 0, 0.1) !important;
-    color: black !important; }
-  .is-racist-contact button {
-    color: black !important;
-    border: 1px solid rgba(0, 0, 0, 0.2) !important; }
-    .is-racist-contact button:hover {
-      color: white !important;
-      background-color: black !important; }
   .is-racist-slideshow-button {
     color: black; }
   .is-racist--item .section {

@@ -36,6 +36,12 @@ $(document).on('ready', function () {
         $('.section').addClass('anim');
     });
 
+    // var screen = $(window)    
+    // if (screen.width() < 992) {
+    //     let instaLInk = document.getElementById("instagram-link");
+    //         instaLInk.setAttribute("href", "instagram.html")
+    // }
+
     // Subscribe and contact forms sender
     $.fn.initForm = function (options) {
         var settings = $.extend({

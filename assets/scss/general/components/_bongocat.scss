@@ -1,0 +1,46 @@
+$base-typing-speed: 300ms;
+$code-typing-animation-duration: 1200ms;
+
+.bongocat {
+  width: 52vw;
+  height: 30vh;
+  margin: auto;
+
+  #bongo-cat {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    margin: auto;
+  }
+}
+
+.typing-animation {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: $code-typing-animation-duration;
+}
+
+@for $line from 1 through 9 {
+  $fn-group: ceil($line / 3);
+
+  path#f#{$fn-group}-l#{$line} {
+    animation-name: typing-f#{$fn-group}-l#{$line};
+  }
+}
+
+#paw-right--up,
+#paw-right--down,
+#paw-left--up,
+#paw-left--down {
+  animation: blink $base-typing-speed infinite;
+}
+
+#paw-right--up,
+#paw-left--down {
+  animation-delay: $base-typing-speed/2;
+}
+
+#laptop__code {
+  transform: rotateX(-37deg) rotateY(-46deg) rotateZ(-23deg) translateX(8px)
+    translateY(20px) translateZ(-50px);
+}

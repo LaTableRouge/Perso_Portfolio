@@ -1,0 +1,203 @@
+// Media Queries :
+
+// Small smartphones
+$screen-xs-min: 479px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Extra Large desktops (1920x1080)
+$screen-xxl-min: 1450px;
+
+$screen-fhd-min: 1920px;
+
+// Small smartphones
+$screen-xs-max: 479px;
+
+$dec: 0.02px;
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: $screen-md-min - $dec;
+
+// Small tablets (portrait view)
+$screen-md-max: $screen-lg-min - $dec;
+
+// Tablets and small desktops
+$screen-lg-max: $screen-xl-min - $dec;
+
+// Large tablets and desktops
+$screen-xl-max: $screen-xxl-min - $dec;
+
+$screen-xxl-max: $screen-fhd-min - $dec;
+
+// XS devices
+@mixin xs {
+  @media (min-width: #{$screen-xs-min}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Extra Extra large devices
+@mixin xxl {
+  @media (min-width: #{$screen-xxl-min}) {
+    @content;
+  }
+}
+
+// Full HD large devices
+@mixin fhd {
+  @media (min-width: #{$screen-fhd-min}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media (min-width: $screen+'px') {
+    @content;
+  }
+}
+
+@mixin cmq($screen-min, $screen-max) {
+  @media (min-width: "#{$screen-min}px") and (max-width: "#{$screen-max}px") {
+    @content;
+  }
+}
+
+////////// DOWN BREAKPOINT
+
+// XS devices
+@mixin down-xs {
+  @media (max-width: #{$screen-xs-max}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin down-sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin down-md {
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin down-lg {
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin down-xl {
+  @media (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}
+
+// Extra Extra large devices
+@mixin down-xl {
+  @media (max-width: #{$screen-xxl-max}) {
+    @content;
+  }
+}
+
+// Full HD devices
+@mixin down-fhd {
+  @media (max-width: #{$screen-fhd-max}) {
+    @content;
+  }
+}
+
+////////// ONLY BREAKPOINT
+
+// XS devices
+@mixin only-xs {
+  @media (max-width: #{$screen-xs-max}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin only-sm {
+  @media (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin only-md {
+  @media (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin only-lg {
+  @media (min-width: #{$screen-lg-min}) and (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin only-xl {
+  @media (min-width: #{$screen-xl-min}) and (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}
+
+// Extra Extra large devices
+@mixin only-xxl {
+  @media (min-width: #{$screen-xxl-min}) and (max-width: #{$screen-xxl-max}) {
+    @content;
+  }
+}
+
+// FHD large devices
+@mixin only-fhd {
+  @media (min-width: #{$screen-fhd-min}) and (max-width: #{$screen-fhd-max}) {
+    @content;
+  }
+}

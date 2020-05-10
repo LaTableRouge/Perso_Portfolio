@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+//Common
+@import 'common/variables';
+@import 'common/fonts';
+@import 'common/reset';
+@import 'common/responsive';
+@import 'common/mixins';
+@import 'common/animations';
+
+//components
+@import 'components/button';
+@import 'components/form';
+@import 'components/article';
+@import 'components/img';
+@import 'components/media';
+@import 'components/carousel';
+@import 'components/navbar';
+@import 'components/cover';
+@import 'components/section';
+@import 'components/footer';
+@import 'components/helpers';
+@import 'components/additional-styles';
+@import 'components/responsive';
+@import 'components/racist';
+@import 'components/switch';
+@import 'components/bongocat';
+
+//pages
+@import 'pages/home';
+@import 'pages/contact';
+@import 'pages/item';
+@import 'pages/slideshow';
+@import 'pages/loader';

@@ -1,0 +1,133 @@
+//Animation mixin setup
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+//font-face
+@mixin font-face(
+  $font-path,
+  $font-name,
+  $file-name,
+  $weight: normal,
+  $style: normal
+) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url('#{$font-path}/#{$font-name}/#{$file-name}.eot');
+    src: url('#{$font-path}/#{$font-name}/#{$file-name}.eotiefix')
+        format('embedded-opentype'),
+      url('#{$font-path}/#{$font-name}/#{$file-name}.wof') format('woff'),
+      url('#{$font-path}/#{$font-name}/#{$file-name}.ttf') format('truetype'),
+      url('#{$font-path}/#{$font-name}/#{$file-name}.svg#{$font-name}')
+        format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+//Padding mixin
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+//Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+//Center position mixin
+@mixin center($position) {
+  position: absolute;
+
+  @if $position== 'vertical' {
+    top: 50%;
+    transform: translateY(-50%);
+  } @else if $position== 'horizontal' {
+    left: 50%;
+    transform: translate(-50%);
+  } @else if $position== 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+//Text shorten mixin
+@mixin text-shorten {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//Before/After content mixin
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+//Placeholder mixin
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin delay {
+  animation-delay: (random(30) / 100) + s;
+  @content;
+}
+
+//Hide element mixin
+@mixin hidden {
+  display: none;
+  visibility: hidden;
+}

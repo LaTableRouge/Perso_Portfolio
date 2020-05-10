@@ -1,0 +1,44 @@
+.media {
+  .icon {
+    font-size: 6rem;
+    display: block;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 40%;
+  }
+
+  .img img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+.media-article-title .media-body {
+  overflow: hidden;
+
+  .media-title {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+.media {
+  &.media-primary,
+  &.media-secondary {
+    color: $white;
+    background: #3f4b62;
+  }
+
+  &.media-white {
+    background: $white;
+  }
+
+  &.media-black {
+    color: $white;
+    background: $text-color;
+  }
+}

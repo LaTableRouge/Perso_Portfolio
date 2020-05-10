@@ -1,0 +1,80 @@
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-bob:hover,
+.hvr-bob:focus,
+.hvr-bob:active {
+  animation-name: hvr-bob-float, hvr-bob;
+  animation-duration: 0.3s, 1.5s;
+  animation-delay: 0s, 0.3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+}
+
+//shine effect for links
+.shine {
+  color: #fff;
+  background: linear-gradient(to right, #bebebe 10%, #fff 50%, #bebebe 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+
+.animateTxt {
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+}
+
+.resumeToHide {
+  a {
+    margin: 0 1rem;
+
+    p {
+      font-size: 1.5rem;
+      color: white;
+      opacity: 1;
+    }
+  }
+}
+
+#logo {
+  &-black {
+    display: none;
+  }
+
+  &-white {
+    display: unset;
+  }
+}
+
+@include md {
+  .section-title {
+    h3 {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  }
+}
+
+@include down-xl {
+  .contact-left {
+    display: none;
+  }
+
+  .page-footer {
+    display: none;
+  }
+}

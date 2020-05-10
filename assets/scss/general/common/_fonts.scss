@@ -1,0 +1,699 @@
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Black.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Black.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Black.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Black.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Black.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Black.svg##{$Chivo}-Black')
+      format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Regular.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Regular.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Regular.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Regular.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Regular.svg##{$Chivo}-Regular')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Thin.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Thin.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Thin.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Thin.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Thin.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Thin.svg##{$Chivo}-Thin')
+      format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-ExtraBoldItalic.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-ExtraBoldItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-ExtraBoldItalic.woff2')
+      format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-ExtraBoldItalic.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-ExtraBoldItalic.ttf')
+      format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-ExtraBoldItalic.svg##{$Chivo}-ExtraBoldItalic')
+      format('svg');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Italic.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Italic.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Italic.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Italic.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Italic.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Italic.svg##{$Chivo}-Italic')
+      format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Light.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Light.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Light.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Light.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Light.svg##{$Chivo}-Light')
+      format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Medium.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Medium.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Medium.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Medium.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Medium.svg##{$Chivo}-Medium')
+      format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-LightItalic.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-LightItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-LightItalic.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-LightItalic.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-LightItalic.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-LightItalic.svg##{$Chivo}-LightItalic')
+      format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-BlackItalic.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-BlackItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-BlackItalic.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-BlackItalic.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-BlackItalic.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-BlackItalic.svg##{$Chivo}-BlackItalic')
+      format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-BoldItalic.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-BoldItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-BoldItalic.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-BoldItalic.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-BoldItalic.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-BoldItalic.svg##{$Chivo}-BoldItalic')
+      format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-MediumItalic.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-MediumItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-MediumItalic.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-MediumItalic.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-MediumItalic.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-MediumItalic.svg##{$Chivo}-MediumItalic')
+      format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Bold.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Bold.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Bold.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Bold.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-Bold.svg##{$Chivo}-Bold')
+      format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-ThinItalic.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-ThinItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-ThinItalic.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-ThinItalic.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-ThinItalic.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-ThinItalic.svg##{$Chivo}-ThinItalic')
+      format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: '#{$Chivo}';
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-ExtraBold.eot');
+  src: url('#{$font-path}/#{$Chivo}/#{$Chivo}-ExtraBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-ExtraBold.woff2') format('woff2'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-ExtraBold.woff') format('woff'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-ExtraBold.ttf') format('truetype'),
+    url('#{$font-path}/#{$Chivo}/#{$Chivo}-ExtraBold.svg##{$Chivo}-ExtraBold')
+      format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$Acumin}';
+  src: url('#{$font-path}/#{$Acumin}/#{$Acumin}-RPro.otf');
+  src: url('#{$font-path}/#{$Acumin}/#{$Acumin}-RPro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$Acumin}';
+  src: url('#{$font-path}/#{$Acumin}/#{$Acumin}-ItPro.otf#iefix');
+  src: url('#{$font-path}/#{$Acumin}/#{$Acumin}-ItPro.otf#iefix')
+    format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: '#{$Acumin}';
+  src: url('#{$font-path}/#{$Acumin}/#{$Acumin}-BdPro.otf#iefix');
+  src: url('#{$font-path}/#{$Acumin}/#{$Acumin}-BdPro.otf#iefix')
+    format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$Acumin}';
+  src: url('#{$font-path}/#{$Acumin}/#{$Acumin}-BdItPro.otf#iefix');
+  src: url('#{$font-path}/#{$Acumin}/#{$Acumin}-BdItPro.otf#iefix')
+    format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+// @font-face {
+//   font-family: '#{$PlayfairDisplaySC}';
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Bold.eot');
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Bold.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Bold.woff2') format('woff2'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Bold.woff') format('woff'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Bold.ttf') format('truetype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Bold.svg##{$PlayfairDisplaySC}-Bold')
+//       format('svg');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$PlayfairDisplaySC}';
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BoldItalic.eot');
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BoldItalic.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BoldItalic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BoldItalic.woff') format('woff'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BoldItalic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BoldItalic.svg##{$PlayfairDisplaySC}-BoldItalic')
+//       format('svg');
+//   font-weight: bold;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$PlayfairDisplaySC}';
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Regular.eot');
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Regular.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Regular.woff2') format('woff2'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Regular.woff') format('woff'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Regular.ttf') format('truetype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Regular.svg##{$PlayfairDisplaySC}-Regular')
+//       format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$PlayfairDisplaySC}';
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Black.eot');
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Black.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Black.woff2') format('woff2'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Black.woff') format('woff'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Black.ttf') format('truetype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Black.svg##{$PlayfairDisplaySC}-Black')
+//       format('svg');
+//   font-weight: 900;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$PlayfairDisplaySC}';
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BoldItalic.eot');
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BoldItalic.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BoldItalic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BoldItalic.woff') format('woff'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BoldItalic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BoldItalic.svg##{$PlayfairDisplaySC}-BoldItalic')
+//       format('svg');
+//   font-weight: bold;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$PlayfairDisplaySC}';
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BlackItalic.eot');
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BlackItalic.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BlackItalic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BlackItalic.woff') format('woff'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BlackItalic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BlackItalic.svg##{$PlayfairDisplaySC}-BlackItalic')
+//       format('svg');
+//   font-weight: 900;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$PlayfairDisplaySC}';
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Regular.eot');
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Regular.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Regular.woff2') format('woff2'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Regular.woff') format('woff'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Regular.ttf') format('truetype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Regular.svg##{$PlayfairDisplaySC}-Regular')
+//       format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$PlayfairDisplaySC}';
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Italic.eot');
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Italic.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Italic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Italic.woff') format('woff'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Italic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Italic.svg##{$PlayfairDisplaySC}-Italic')
+//       format('svg');
+//   font-weight: normal;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$PlayfairDisplaySC}';
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Bold.eot');
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Bold.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Bold.woff2') format('woff2'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Bold.woff') format('woff'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Bold.ttf') format('truetype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Bold.svg##{$PlayfairDisplaySC}-Bold')
+//       format('svg');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$PlayfairDisplaySC}';
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Black.eot');
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Black.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Black.woff2') format('woff2'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Black.woff') format('woff'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Black.ttf') format('truetype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Black.svg##{$PlayfairDisplaySC}-Black')
+//       format('svg');
+//   font-weight: 900;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$PlayfairDisplaySC}';
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Italic.eot');
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Italic.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Italic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Italic.woff') format('woff'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Italic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-Italic.svg##{$PlayfairDisplaySC}-Italic')
+//       format('svg');
+//   font-weight: normal;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$PlayfairDisplaySC}';
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BlackItalic.eot');
+//   src: url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BlackItalic.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BlackItalic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BlackItalic.woff') format('woff'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BlackItalic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$PlayfairDisplay}/#{$PlayfairDisplaySC}-BlackItalic.svg##{$PlayfairDisplaySC}-BlackItalic')
+//       format('svg');
+//   font-weight: 900;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$OpenSans}';
+//   src: url('#{$font-path}/#{$OpenSans}/#{$OpenSans}-Bold.eot');
+//   src: url('#{$font-path}/#{$OpenSans}/#{$OpenSans}-Bold.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$OpenSans}/#{$OpenSans}-Bold.woff2') format('woff2'),
+//     url('#{$font-path}/#{$OpenSans}/#{$OpenSans}-Bold.woff') format('woff'),
+//     url('#{$font-path}/#{$OpenSans}/#{$OpenSans}-Bold.ttf') format('truetype'),
+//     url('#{$font-path}/#{$OpenSans}/#{$OpenSans}-Bold.svg##{$OpenSans}-Bold') format('svg');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$OpenSans}';
+//   src: url('#{$font-path}/#{$OpenSans}/#{$OpenSans}.eot');
+//   src: url('#{$font-path}/#{$OpenSans}/#{$OpenSans}.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$OpenSans}/#{$OpenSans}.woff2') format('woff2'),
+//     url('#{$font-path}/#{$OpenSans}/#{$OpenSans}.woff') format('woff'),
+//     url('#{$font-path}/#{$OpenSans}/#{$OpenSans}.ttf') format('truetype'),
+//     url('#{$font-path}/#{$OpenSans}/#{$OpenSans}.svg##{$OpenSans}') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$OpenSans}';
+//   src: url('#{$font-path}/#{$OpenSans}/#{$OpenSans}-Light.eot');
+//   src: url('#{$font-path}/#{$OpenSans}/#{$OpenSans}-Light.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$OpenSans}/#{$OpenSans}-Light.woff2') format('woff2'),
+//     url('#{$font-path}/#{$OpenSans}/#{$OpenSans}-Light.woff') format('woff'),
+//     url('#{$font-path}/#{$OpenSans}/#{$OpenSans}-Light.ttf') format('truetype'),
+//     url('#{$font-path}/#{$OpenSans}/#{$OpenSans}-Light.svg##{$OpenSans}-Light') format('svg');
+//   font-weight: 300;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Heavy.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Heavy.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Heavy.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Heavy.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Heavy.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Heavy.svg##{$Oswald}-Heavy') format('svg');
+//   font-weight: 900;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Demi-BoldItalic.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Demi-BoldItalic.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Demi-BoldItalic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Demi-BoldItalic.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Demi-BoldItalic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Demi-BoldItalic.svg##{$Oswald}-Demi-BoldItalic')
+//       format('svg');
+//   font-weight: bold;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Regular.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Regular.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Regular.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Regular.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Regular.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Regular.svg##{$Oswald}-Regular') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-BoldItalic.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-BoldItalic.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-BoldItalic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-BoldItalic.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-BoldItalic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-BoldItalic.svg##{$Oswald}-BoldItalic') format('svg');
+//   font-weight: bold;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-HeavyItalic.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-HeavyItalic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-HeavyItalic.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-HeavyItalic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-HeavyItalic.svg##{$Oswald}-HeavyItalic') format('svg');
+//   font-weight: 900;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-DemiBold.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-DemiBold.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-DemiBold.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-DemiBold.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-DemiBold.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-DemiBold.svg##{$Oswald}-DemiBold') format('svg');
+//   font-weight: 600;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-ExtraLight.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-ExtraLight.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-ExtraLight.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-ExtraLight.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-ExtraLight.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-ExtraLight.svg##{$Oswald}-ExtraLight') format('svg');
+//   font-weight: 200;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Medium.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Medium.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Medium.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Medium.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Medium.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Medium.svg##{$Oswald}-Medium') format('svg');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Light.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Light.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Light.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Light.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Light.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Light.svg##{$Oswald}-Light') format('svg');
+//   font-weight: 300;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-MediumItalic.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-MediumItalic.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-MediumItalic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-MediumItalic.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-MediumItalic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-MediumItalic.svg##{$Oswald}-MediumItalic') format('svg');
+//   font-weight: 500;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Bold.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Bold.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Bold.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Bold.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Bold.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Bold.svg##{$Oswald}-Bold') format('svg');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-LightItalic.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-LightItalic.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-LightItalic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-LightItalic.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-LightItalic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-LightItalic.svg##{$Oswald}-LightItalic') format('svg');
+//   font-weight: 300;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-RegularItalic.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-RegularItalic.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-RegularItalic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-RegularItalic.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-RegularItalic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-RegularItalic.svg##{$Oswald}-RegularItalic') format('svg');
+//   font-weight: normal;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$Oswald}';
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Extra-LightItalic.eot');
+//   src: url('#{$font-path}/#{$Oswald}/#{$Oswald}-Extra-LightItalic.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Extra-LightItalic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Extra-LightItalic.woff') format('woff'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Extra-LightItalic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Oswald}/#{$Oswald}-Extra-LightItalic.svg##{$Oswald}-Extra-LightItalic')
+//       format('svg');
+//   font-weight: 300;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$Montserrat}';
+//   src: url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Italic.eot');
+//   src: url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Italic.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Italic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Italic.woff') format('woff'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Italic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Italic.svg##{$Montserrat}-Italic') format('svg');
+//   font-weight: normal;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$Montserrat}';
+//   src: url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-BoldItalic.eot');
+//   src: url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-BoldItalic.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-BoldItalic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-BoldItalic.woff') format('woff'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-BoldItalic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-BoldItalic.svg##{$Montserrat}-BoldItalic') format('svg');
+//   font-weight: bold;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$Montserrat}';
+//   src: url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Bold.eot');
+//   src: url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Bold.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Bold.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Bold.woff') format('woff'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Bold.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Bold.svg##{$Montserrat}-Bold') format('svg');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$Montserrat}';
+//   src: url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Regular.eot');
+//   src: url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Regular.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Regular.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Regular.woff') format('woff'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Regular.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Regular.svg##{$Montserrat}-Regular') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$Montserrat}';
+//   src: url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Medium.eot');
+//   src: url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Medium.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Medium.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Medium.woff') format('woff'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Medium.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Montserrat}/#{$Montserrat}-Medium.svg##{$Montserrat}-Medium') format('svg');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$Cardo}';
+//   src: url('#{$font-path}/#{$Cardo}/#{$Cardo}-Bold.eot');
+//   src: url('#{$font-path}/#{$Cardo}/#{$Cardo}-Bold.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Cardo}/#{$Cardo}-Bold.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Cardo}/#{$Cardo}-Bold.woff') format('woff'),
+//     url('#{$font-path}/#{$Cardo}/#{$Cardo}-Bold.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Cardo}/#{$Cardo}-Bold.svg##{$Cardo}-Bold') format('svg');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: '#{$Cardo}';
+//   src: url('#{$font-path}/#{$Cardo}/#{$Cardo}-Italic.eot');
+//   src: url('#{$font-path}/#{$Cardo}/#{$Cardo}-Italic.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Cardo}/#{$Cardo}-Italic.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Cardo}/#{$Cardo}-Italic.woff') format('woff'),
+//     url('#{$font-path}/#{$Cardo}/#{$Cardo}-Italic.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Cardo}/#{$Cardo}-Italic.svg##{$Cardo}-Italic') format('svg');
+//   font-weight: normal;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: '#{$Cardo}';
+//   src: url('#{$font-path}/#{$Cardo}/#{$Cardo}-Regular.eot');
+//   src: url('#{$font-path}/#{$Cardo}/#{$Cardo}-Regular.eot?#iefix') format('embedded-opentype'),
+//     url('#{$font-path}/#{$Cardo}/#{$Cardo}-Regular.woff2') format('woff2'),
+//     url('#{$font-path}/#{$Cardo}/#{$Cardo}-Regular.woff') format('woff'),
+//     url('#{$font-path}/#{$Cardo}/#{$Cardo}-Regular.ttf') format('truetype'),
+//     url('#{$font-path}/#{$Cardo}/#{$Cardo}-Regular.svg##{$Cardo}-Regular') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }

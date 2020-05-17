@@ -1,6 +1,7 @@
 prepros.config
-gulpfile.js
+# gulpfile.js
 node_modules/
+dist/
 assets/fonts/Cardo/
 assets/fonts/Opensans/
 assets/fonts/Oswald/

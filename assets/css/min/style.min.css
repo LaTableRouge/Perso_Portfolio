@@ -703,9 +703,9 @@ h1,h2,h3,h4{text-shadow:0 1px 2px rgba(0,0,0,0.2)}.text-black{color:#1d1d1d !imp
 .services .media{margin-bottom:25px}.section-subscribe img{position:absolute;right:-10%;top:-15vh;width:50%;opacity:.1}
 .contact-left{padding-left:10%}.contact-right{padding-left:0;text-align:center !important;-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
 .contact-right p{margin:0}.contact-right div{margin-top:20px;position:relative}.contact-right img{position:absolute;left:150px;top:-40px;opacity:.12;width:35vw}
-.mb-32{margin-bottom:32px}.mr-auto-my{margin:0 auto}.padding-none{padding:0}.item-buttons-purchase{padding:0;text-align:left}
-.item-buttons-next{padding:0;text-align:center}.opacity-75{opacity:.75 !important}
-.is-racist{background-color:white !important}.is-racist-content{color:black !important;text-shadow:0 1px 2px rgba(0,0,0,0.2) !important}
+.mb-32{margin-bottom:32px}.mb-70{margin-bottom:70px}.mr-auto-my{margin:0 auto}.padding-none{padding:0}
+.item-buttons-purchase{padding:0;text-align:left}.item-buttons-next{padding:0;text-align:center}
+.opacity-75{opacity:.75 !important}.is-racist{background-color:white !important}.is-racist-content{color:black !important;text-shadow:0 1px 2px rgba(0,0,0,0.2) !important}
 .is-racist-content:hover{color:black}.is-racist-content::before{color:black !important}
 .is-racist-content-h2{color:black !important}.is-racist-content-h2::before{color:black !important;background:black !important}
 .is-racist-content-h2::after{background:black !important}.is-racist-menu .menu-icon{background:rgba(0,0,0,0.2)}

@@ -1,0 +1,17 @@
+.dg {
+    &.ac {
+        display: none;
+    }
+}
+
+.background {
+    &__animation {
+        position: fixed;
+        z-index: 0;
+
+        // opacity: 0.7;
+        #animation {
+            &__canvas {}
+        }
+    }
+}

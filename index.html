@@ -71,7 +71,7 @@
     <link rel="stylesheet" href="assets/lib/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/lib/swiper/swiper.min.css">
     <link rel="stylesheet" href="assets/lib/jquery/jquery.fullpage.min.css">
-    <link rel="stylesheet" href="assets/lib/vegas/vegas/vegas.min.css">
+    <link rel="stylesheet" href="assets/lib/vegas/vegas.min.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
@@ -81,12 +81,15 @@
     <link rel="stylesheet" href="assets/css/min/style.min.css">
 </head>
 
-<body onload="loadFunction()" id="menu" class="body-page">
+<body id="menu" class="body-page is-loading">
     <!--[if lt IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
+<div class="background__animation">
+    <canvas id="animation__canvas"></canvas>
+</div>
 
-    <!-- <div id="loader" class="loader">
+    <div id="loader" class="loader">
         <div class="loader-wrap">
             <h2 class="text-flicker-out-glow-1">W</h2>
             <h2 class="text-flicker-out-glow-2">e</h2>
@@ -107,7 +110,7 @@
             <h3 class="text-flicker-out-glow-7">u</h3>
             <h3 class="text-flicker-out-glow-8">e</h3>
         </div>
-    </div> -->
+    </div>
 
     <!-- Start Header -->
     <header id="header" class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
@@ -510,7 +513,7 @@
                 <div class="section-content reduced">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-5 text-left contact-right">
-                            <img src="assets/img/phone-icon.png" alt="">
+                            <!-- <img src="assets/img/phone-icon.png" alt=""> -->
                             <div>
                                 <h4>Address</h4>
                                 <p>13 rue du Chapeau Rouge</p>
@@ -585,6 +588,7 @@
     <script src="assets/lib/scrolloverflow/scrolloverflow.min.js"></script>
     <script src="assets/lib/all.js"></script>
     <script src="assets/lib/particlejs/particles.min.js"></script>
+    <script src="assets/lib/dat/dat.gui.min.js"></script>
     
     <!-- Main Script files -->
     <script src="assets/js/babel/custom.ba.js"></script>

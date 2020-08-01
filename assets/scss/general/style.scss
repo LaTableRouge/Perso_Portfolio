@@ -9,6 +9,7 @@
 @import 'common/animations';
 
 //components
+@import 'components/loader';
 @import 'components/button';
 @import 'components/form';
 @import 'components/article';
@@ -25,10 +26,11 @@
 @import 'components/racist';
 @import 'components/switch';
 @import 'components/bongocat';
+@import 'components/background';
 
 //pages
 @import 'pages/home';
 @import 'pages/contact';
 @import 'pages/item';
 @import 'pages/slideshow';
-@import 'pages/loader';
+

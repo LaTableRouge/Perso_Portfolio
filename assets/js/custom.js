@@ -354,118 +354,126 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   /*********[TEXT SCRAMBLE]*********/
-  class TextScramble {
-    constructor(el) {
-      this.el = el;
-      this.chars = '!<>-_\\/[]{}—=+*^?#________';
-      this.update = this.update.bind(this);
-    }
-    setText(newText) {
-      const oldText = this.el.innerText;
-      const length = Math.max(oldText.length, newText.length);
-      const promise = new Promise((resolve) => (this.resolve = resolve));
-      this.queue = [];
-      for (let i = 0; i < length; i++) {
-        const from = oldText[i] || '';
-        const to = newText[i] || '';
-        const start = Math.floor(Math.random() * 40);
-        const end = start + Math.floor(Math.random() * 40);
-        this.queue.push({
-          from,
-          to,
-          start,
-          end,
-        });
+  const el = document.querySelector('.text');
+  if (el !== null) {
+
+    class TextScramble {
+      constructor(el) {
+        this.el = el;
+        this.chars = '!<>-_\\/[]{}—=+*^?#________';
+        this.update = this.update.bind(this);
       }
-      cancelAnimationFrame(this.frameRequest);
-      this.frame = 0;
-      this.update();
-      return promise;
-    }
-    update() {
-      let output = '';
-      let complete = 0;
-      for (let i = 0, n = this.queue.length; i < n; i++) {
-        let {
-          from,
-          to,
-          start,
-          end,
-          char
-        } = this.queue[i];
-        if (this.frame >= end) {
-          complete++;
-          output += to;
-        } else if (this.frame >= start) {
-          if (!char || Math.random() < 0.28) {
-            char = this.randomChar();
-            this.queue[i].char = char;
+      setText(newText) {
+        const oldText = this.el.innerText;
+        const length = Math.max(oldText.length, newText.length);
+        const promise = new Promise((resolve) => (this.resolve = resolve));
+        this.queue = [];
+        for (let i = 0; i < length; i++) {
+          const from = oldText[i] || '';
+          const to = newText[i] || '';
+          const start = Math.floor(Math.random() * 40);
+          const end = start + Math.floor(Math.random() * 40);
+          this.queue.push({
+            from,
+            to,
+            start,
+            end,
+          });
+        }
+        cancelAnimationFrame(this.frameRequest);
+        this.frame = 0;
+        this.update();
+        return promise;
+      }
+      update() {
+        let output = '';
+        let complete = 0;
+        for (let i = 0, n = this.queue.length; i < n; i++) {
+          let {
+            from,
+            to,
+            start,
+            end,
+            char
+          } = this.queue[i];
+          if (this.frame >= end) {
+            complete++;
+            output += to;
+          } else if (this.frame >= start) {
+            if (!char || Math.random() < 0.28) {
+              char = this.randomChar();
+              this.queue[i].char = char;
+            }
+            output += `<span class="dud">${char}</span>`;
+          } else {
+            output += from;
           }
-          output += `<span class="dud">${char}</span>`;
+        }
+        this.el.innerHTML = output;
+        if (complete === this.queue.length) {
+          this.resolve();
         } else {
-          output += from;
+          this.frameRequest = requestAnimationFrame(this.update);
+          this.frame++;
         }
       }
-      this.el.innerHTML = output;
-      if (complete === this.queue.length) {
-        this.resolve();
-      } else {
-        this.frameRequest = requestAnimationFrame(this.update);
-        this.frame++;
+      randomChar() {
+        return this.chars[Math.floor(Math.random() * this.chars.length)];
       }
     }
-    randomChar() {
-      return this.chars[Math.floor(Math.random() * this.chars.length)];
-    }
+    // Text
+    const phrases = [
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'Hello there !',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'I love front-end ...',
+      'General Kenobi !',
+    ];
+
+    const fx = new TextScramble(el);
+
+    let counter = 0;
+    const next = () => {
+      fx.setText(phrases[counter]).then(() => {
+        setTimeout(next, 2500);
+      });
+      counter = (counter + 1) % phrases.length;
+    };
+    next();
   }
-  // Text
-  const phrases = [
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'Hello there !',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'I love front-end ...',
-    'General Kenobi !',
-  ];
-
-  const el = document.querySelector('.text');
-  const fx = new TextScramble(el);
-
-  let counter = 0;
-  const next = () => {
-    fx.setText(phrases[counter]).then(() => {
-      setTimeout(next, 2500);
-    });
-    counter = (counter + 1) % phrases.length;
-  };
-  next();
 
   /*********[LOADER]*********/
   let loadFunction = () => {
-    setTimeout(() => {
-      document.getElementById('loader').style.opacity = '0';
+    let loader = document.getElementById('loader');
+    let body = document.getElementById('menu');
+    if (loader !== null) {
       setTimeout(() => {
-        document.getElementById('loader').style.display = 'none';
-        document.getElementById('menu').classList.remove("is-loading");
-      }, 500);
-    }, 4000);
+        loader.style.opacity = '0';
+        setTimeout(() => {
+          loader.style.display = 'none';
+          body.classList.remove("is-loading");
+        }, 500);
+      }, 4000);
+    }
   };
   loadFunction();
 
+  /*********[PERLIN ANIMATION]*********/
   setTimeout(() => {
     // Ported from Stefan Gustavson's java implementation
     // http://staffwww.itn.liu.se/~stegu/simplexnoise/simplexnoise.pdf
@@ -542,16 +550,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       var gi101 = this.perm[X + 1 + this.perm[Y + this.perm[Z + 1]]] % 12;
       var gi110 = this.perm[X + 1 + this.perm[Y + 1 + this.perm[Z]]] % 12;
       var gi111 = this.perm[X + 1 + this.perm[Y + 1 + this.perm[Z + 1]]] % 12;
-
-      // The gradients of each corner are now: 
-      // g000 = grad3[gi000]; 
-      // g001 = grad3[gi001]; 
-      // g010 = grad3[gi010]; 
-      // g011 = grad3[gi011]; 
-      // g100 = grad3[gi100]; 
-      // g101 = grad3[gi101]; 
-      // g110 = grad3[gi110]; 
-      // g111 = grad3[gi111]; 
       // Calculate noise contributions from each of the eight corners 
       var n000 = this.dot(this.grad3[gi000], x, y, z);
       var n100 = this.dot(this.grad3[gi100], x - 1, y, z);
@@ -595,7 +593,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           'resize',
           function () {
             Utils.setCanvasSize();
-            refresh()
+            // refresh()
           }
         );
       },
@@ -699,73 +697,65 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
 
+    let canvas = document.getElementById('animation__canvas');
+    if (canvas !== null) {
+      var perlin = new ClassicalNoise(),
+        ctx = canvas.getContext('2d'),
+        generator,
+        gui,
+        globalParams = {
+          compositeOperation: true
+        };
 
-    var perlin = new ClassicalNoise(),
-      canvas = document.getElementById('animation__canvas'),
-      ctx = canvas.getContext('2d'),
-      generator,
-      gui,
-      globalParams = {
-        compositeOperation: true
-      };
+      (function init() {
+        Utils.setCanvasSize();
+        Utils.addEvents();
 
-    (function init() {
-      Utils.setCanvasSize();
-      Utils.addEvents();
+        generator = new Generator({
+          x: canvas.width / 2,
+          y: canvas.height / 2
+        });
 
-      generator = new Generator({
-        x: canvas.width / 2,
-        y: canvas.height / 2
-      });
+        gui = new dat.GUI();
+        var folder_0 = gui.addFolder('Global');
+        folder_0.open();
+        folder_0.add(globalParams, 'compositeOperation').onFinishChange(refresh);
 
-      gui = new dat.GUI();
-      var folder_0 = gui.addFolder('Global');
-      folder_0.open();
-      folder_0.add(globalParams, 'compositeOperation').onFinishChange(refresh);
+        var folder_1 = gui.addFolder('Generator');
+        folder_1.open();
+        folder_1.add(generator, 'particleCount', 1, 5000).step(10).onFinishChange(refresh);
+        folder_1.add(generator, 'initialDistance', -100, 100).step(10).onFinishChange(refresh);
+        folder_1.add(generator, 'distanceThreshold', 0, 1000).step(10).onFinishChange(refresh);
+        folder_1.add(generator, 'seed_1', 0, 5).onFinishChange(refresh);
+        folder_1.add(generator, 'seed_2', 0, 5).onFinishChange(refresh);
+        folder_1.add(generator, 'perlinAmp', 0, 100).step(1).onFinishChange(refresh);
+        folder_1.add(generator, 'perlinAmpIncrease').onFinishChange(refresh);
+        folder_1.add(generator, 'perlinIncreaseSpeed', 0, 10).onFinishChange(refresh);
 
-      var folder_1 = gui.addFolder('Generator');
-      folder_1.open();
-      folder_1.add(generator, 'particleCount', 1, 5000).step(10).onFinishChange(refresh);
-      folder_1.add(generator, 'initialDistance', -100, 100).step(10).onFinishChange(refresh);
-      folder_1.add(generator, 'distanceThreshold', 0, 1000).step(10).onFinishChange(refresh);
-      folder_1.add(generator, 'seed_1', 0, 5).onFinishChange(refresh);
-      folder_1.add(generator, 'seed_2', 0, 5).onFinishChange(refresh);
-      folder_1.add(generator, 'perlinAmp', 0, 100).step(1).onFinishChange(refresh);
-      folder_1.add(generator, 'perlinAmpIncrease').onFinishChange(refresh);
-      folder_1.add(generator, 'perlinIncreaseSpeed', 0, 10).onFinishChange(refresh);
+        var folder_2 = gui.addFolder('Particles');
+        folder_2.open();
+        folder_2.add(generator, 'thresholdVariation', 0, 500).step(1).onFinishChange(refresh);
+        folder_2.add(generator, 'particleSize', 1, 3).step(1).onFinishChange(refresh);
+        folder_2.add(generator, 'particleRotationSpeed', 0, 3).onFinishChange(refresh);
+        folder_2.add(generator, 'particleDistanceSpeed', 0, 3).onFinishChange(refresh);
 
-      var folder_2 = gui.addFolder('Particles');
-      folder_2.open();
-      folder_2.add(generator, 'thresholdVariation', 0, 500).step(1).onFinishChange(refresh);
-      folder_2.add(generator, 'particleSize', 1, 3).step(1).onFinishChange(refresh);
-      folder_2.add(generator, 'particleRotationSpeed', 0, 3).onFinishChange(refresh);
-      folder_2.add(generator, 'particleDistanceSpeed', 0, 3).onFinishChange(refresh);
+        generator.populate();
 
-      generator.populate();
+        animate();
+      })();
 
-      animate();
-    })();
+      function refresh() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        generator.particles = [];
+        generator.newPerlinAmp = generator.perlinAmp;
+        generator.populate();
+      }
 
-    function refresh() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      generator.particles = [];
-      generator.newPerlinAmp = generator.perlinAmp;
-      generator.populate();
-    }
-
-    function animate() {
-      // if (globalParams.compositeOperation) {
-      //   ctx.fillStyle = "rgba(11,11,11,.02)";
-      //   // ctx.globalAlpha = 1;   
-      //   ctx.fillRect(0, 0, canvas.width, canvas.height);
-      //   ctx.globalCompositeOperation = "lighter";
-      // } else {
+      function animate() {
         ctx.fillStyle = "rgba(#1d1d1d,1)";
-      //   //ctx.fillRect(0, 0, canvas.width, canvas.height);
-      //   ctx.globalCompositeOperation = "source-over";
-      // }
-      generator.draw();
-      requestAnimationFrame(animate);
+        generator.draw();
+        requestAnimationFrame(animate);
+      }
     }
   }, 4000);
 });

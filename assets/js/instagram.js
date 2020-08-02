@@ -34,7 +34,7 @@
     }
     return {
       x: posx,
-      y: posy
+      y: posy,
     };
   };
 
@@ -42,7 +42,7 @@
   // lastMousePos: last last recorded mouse position (at the time the last image was shown)
   let mousePos = (lastMousePos = {
     x: 0,
-    y: 0
+    y: 0,
   });
 
   // update the mouse position
@@ -55,7 +55,7 @@
   class Image {
     constructor(el) {
       this.DOM = {
-        el: el
+        el: el,
       };
       // image deafult styles
       this.defaultStyle = {
@@ -87,7 +87,7 @@
     constructor() {
       // images container
       this.DOM = {
-        content: document.querySelector('.content')
+        content: document.querySelector('.content'),
       };
       // array of Image objs, one per image element
       this.images = [];
@@ -127,7 +127,8 @@
       new TimelineMax()
         // show the image
         .set(
-          img.DOM.el, {
+          img.DOM.el,
+          {
             opacity: 1,
             x: mousePos.x > lastMousePos.x ? 100 : -100,
             zIndex: this.zIndexVal,
@@ -137,7 +138,8 @@
         // animate position
         .to(
           img.DOM.el,
-          1.2, {
+          1.2,
+          {
             ease: Expo.easeOut,
             x: 0,
           },
@@ -159,8 +161,9 @@
   const preloadImages = () => {
     return new Promise((resolve, reject) => {
       imagesLoaded(
-        document.querySelectorAll('.content__img'), {
-          background: true
+        document.querySelectorAll('.content__img'),
+        {
+          background: true,
         },
         resolve
       );

@@ -1,6 +1,6 @@
 'use strict';
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener('DOMContentLoaded', (event) => {
   // Cached Variables
   var windowVar = $(window);
   var $main = $('html, body');
@@ -43,7 +43,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // Subscribe and contact forms sender
   $.fn.initForm = function (options) {
-    var settings = $.extend({
+    var settings = $.extend(
+      {
         type: 'post',
         serverUrl: '#',
         successClean: this.find('.form-success-clean'),
@@ -332,7 +333,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       $.fn.fullpage.moveSectionDown();
     } catch (error) {
       // normal scroll
-      $main.animate({
+      $main.animate(
+        {
           scrollTop: window.innerHeight,
         },
         400,
@@ -356,7 +358,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   /*********[TEXT SCRAMBLE]*********/
   const el = document.querySelector('.text');
   if (el !== null) {
-
     class TextScramble {
       constructor(el) {
         this.el = el;
@@ -389,13 +390,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         let output = '';
         let complete = 0;
         for (let i = 0, n = this.queue.length; i < n; i++) {
-          let {
-            from,
-            to,
-            start,
-            end,
-            char
-          } = this.queue[i];
+          let { from, to, start, end, char } = this.queue[i];
           if (this.frame >= end) {
             complete++;
             output += to;
@@ -466,7 +461,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         loader.style.opacity = '0';
         setTimeout(() => {
           loader.style.display = 'none';
-          body.classList.remove("is-loading");
+          body.classList.remove('is-loading');
         }, 500);
       }, 4000);
     }
@@ -485,7 +480,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
      * You can pass in a random number generator object if you like.
      * It is assumed to have a random() method.
      */
-    var ClassicalNoise = function (r) { // Classic Perlin noise in 3D, for comparison 
+    var ClassicalNoise = function (r) {
+      // Classic Perlin noise in 3D, for comparison
       if (r == undefined) r = Math;
       this.grad3 = [
         [1, 1, 0],
@@ -499,13 +495,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         [0, 1, 1],
         [0, -1, 1],
         [0, 1, -1],
-        [0, -1, -1]
+        [0, -1, -1],
       ];
       this.p = [];
       for (var i = 0; i < 256; i++) {
         this.p[i] = Math.floor(r.random() * 256);
       }
-      // To remove the need for index wrapping, double the permutation table length 
+      // To remove the need for index wrapping, double the permutation table length
       this.perm = [];
       for (var i = 0; i < 512; i++) {
         this.perm[i] = this.p[i & 255];
@@ -524,24 +520,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
       return t * t * t * (t * (t * 6.0 - 15.0) + 10.0);
     };
 
-    // Classic Perlin noise, 3D version 
+    // Classic Perlin noise, 3D version
     ClassicalNoise.prototype.noise = function (x, y, z) {
-      // Find unit grid cell containing point 
+      // Find unit grid cell containing point
       var X = Math.floor(x);
       var Y = Math.floor(y);
       var Z = Math.floor(z);
 
-      // Get relative xyz coordinates of point within that cell 
+      // Get relative xyz coordinates of point within that cell
       x = x - X;
       y = y - Y;
       z = z - Z;
 
-      // Wrap the integer cells at 255 (smaller integer period can be introduced here) 
+      // Wrap the integer cells at 255 (smaller integer period can be introduced here)
       X = X & 255;
       Y = Y & 255;
       Z = Z & 255;
 
-      // Calculate a set of eight hashed gradient indices 
+      // Calculate a set of eight hashed gradient indices
       var gi000 = this.perm[X + this.perm[Y + this.perm[Z]]] % 12;
       var gi001 = this.perm[X + this.perm[Y + this.perm[Z + 1]]] % 12;
       var gi010 = this.perm[X + this.perm[Y + 1 + this.perm[Z]]] % 12;
@@ -550,7 +546,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       var gi101 = this.perm[X + 1 + this.perm[Y + this.perm[Z + 1]]] % 12;
       var gi110 = this.perm[X + 1 + this.perm[Y + 1 + this.perm[Z]]] % 12;
       var gi111 = this.perm[X + 1 + this.perm[Y + 1 + this.perm[Z + 1]]] % 12;
-      // Calculate noise contributions from each of the eight corners 
+      // Calculate noise contributions from each of the eight corners
       var n000 = this.dot(this.grad3[gi000], x, y, z);
       var n100 = this.dot(this.grad3[gi100], x - 1, y, z);
       var n010 = this.dot(this.grad3[gi010], x, y - 1, z);
@@ -559,19 +555,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
       var n101 = this.dot(this.grad3[gi101], x - 1, y, z - 1);
       var n011 = this.dot(this.grad3[gi011], x, y - 1, z - 1);
       var n111 = this.dot(this.grad3[gi111], x - 1, y - 1, z - 1);
-      // Compute the fade curve value for each of x, y, z 
+      // Compute the fade curve value for each of x, y, z
       var u = this.fade(x);
       var v = this.fade(y);
       var w = this.fade(z);
-      // Interpolate along x the contributions from each of the corners 
+      // Interpolate along x the contributions from each of the corners
       var nx00 = this.mix(n000, n100, u);
       var nx01 = this.mix(n001, n101, u);
       var nx10 = this.mix(n010, n110, u);
       var nx11 = this.mix(n011, n111, u);
-      // Interpolate the four results along y 
+      // Interpolate the four results along y
       var nxy0 = this.mix(nx00, nx10, v);
       var nxy1 = this.mix(nx01, nx11, v);
-      // Interpolate the two last results along z 
+      // Interpolate the two last results along z
       var nxyz = this.mix(nxy0, nxy1, w);
 
       return nxyz;
@@ -581,25 +577,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
     /*********[BACKGROUND ANIMATION]*********/
     let Utils = {
       setCanvasSize: function () {
-        canvas.width = document.documentElement.clientWidth,
-          canvas.height = document.documentElement.clientHeight;
+        (canvas.width = document.documentElement.clientWidth),
+          (canvas.height = document.documentElement.clientHeight);
 
-        canvas.setAttribute("width", canvas.width);
-        canvas.setAttribute("height", canvas.height);
+        canvas.setAttribute('width', canvas.width);
+        canvas.setAttribute('height', canvas.height);
       },
 
       addEvents: function () {
-        window.addEventListener(
-          'resize',
-          function () {
-            Utils.setCanvasSize();
-            // refresh()
-          }
-        );
+        window.addEventListener('resize', function () {
+          Utils.setCanvasSize();
+          // refresh()
+        });
       },
 
       degToRad: function (deg) {
-        return deg * Math.PI / 180;
+        return (deg * Math.PI) / 180;
       },
 
       randInt: function (min, max) {
@@ -608,9 +601,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       reload: function () {
         window.location.reload();
-      }
+      },
     };
-
 
     function Generator(params) {
       this.x = params.x;
@@ -623,11 +615,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
       this.seed_1 = 1;
       this.seed_2 = 0;
       this.particleSize = 1;
-      this.particleRotationSpeed = .05;
+      this.particleRotationSpeed = 0.05;
       this.particleDistanceSpeed = 3;
       this.perlinAmp = this.newPerlinAmp = 1;
       this.perlinAmpIncrease = true;
-      this.perlinIncreaseSpeed = .2;
+      this.perlinIncreaseSpeed = 0.2;
 
       this.particles = [];
       this.populate();
@@ -637,26 +629,30 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     G.populate = function () {
       for (var i = 0; i < this.particleCount; i++) {
-        this.particles.push(new Particle({
-          x: this.x,
-          y: this.y,
-          angle: Utils.randInt(1, 360),
-          distance: this.initialDistance,
-          distanceThreshold: this.distanceThreshold,
-          thresholdVariation: this.thresholdVariation,
-          color: (Math.random() < .5) ? "rgba(51, 204, 255,.02)" : "rgba(255, 50, 50,.02)",
-          size: this.particleSize,
-        }));
+        this.particles.push(
+          new Particle({
+            x: this.x,
+            y: this.y,
+            angle: Utils.randInt(1, 360),
+            distance: this.initialDistance,
+            distanceThreshold: this.distanceThreshold,
+            thresholdVariation: this.thresholdVariation,
+            color:
+              Math.random() < 0.5
+                ? 'rgba(51, 204, 255,.02)'
+                : 'rgba(255, 50, 50,.02)',
+            size: this.particleSize,
+          })
+        );
       }
-    }
+    };
 
     G.draw = function () {
       if (this.perlinAmpIncrease) this.newPerlinAmp -= this.perlinIncreaseSpeed;
       this.particles.forEach(function (particle) {
         particle.move();
       });
-    }
-
+    };
 
     function Particle(params) {
       this.initX = this.x = params.x || canvas.width / 2;
@@ -665,7 +661,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       this.distance = params.distance;
       this.x = this.initX + Math.cos(this.angle) * this.distance;
       this.y = this.initY + Math.sin(this.angle) * this.distance;
-      this.distanceThreshold = params.distanceThreshold + Utils.randInt(0, params.thresholdVariation);
+      this.distanceThreshold =
+        params.distanceThreshold + Utils.randInt(0, params.thresholdVariation);
       this.color = params.color;
       this.size = params.size || 1;
     }
@@ -674,28 +671,30 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     P.move = function () {
       if (this.distance < this.distanceThreshold) {
-        this.distance += generator.particleDistanceSpeed + generator.newPerlinAmp * perlin.noise(
-          this.x * generator.seed_1,
-          this.y * generator.seed_2,
-          1);
+        this.distance +=
+          generator.particleDistanceSpeed +
+          generator.newPerlinAmp *
+            perlin.noise(
+              this.x * generator.seed_1,
+              this.y * generator.seed_2,
+              1
+            );
       } else {
-        this.distance += generator.newPerlinAmp * perlin.noise(
-          this.x * generator.seed_1,
-          this.y * generator.seed_2,
-          1);
+        this.distance +=
+          generator.newPerlinAmp *
+          perlin.noise(this.x * generator.seed_1, this.y * generator.seed_2, 1);
       }
       this.angle += Utils.degToRad(generator.particleRotationSpeed);
       this.x = this.initX + Math.cos(this.angle) * this.distance;
       this.y = this.initY + Math.sin(this.angle) * this.distance;
       this.draw();
-    }
+    };
 
     P.draw = function () {
       ctx.fillStyle = this.color;
 
       ctx.fillRect(this.x, this.y, this.size, this.size);
-    }
-
+    };
 
     let canvas = document.getElementById('animation__canvas');
     if (canvas !== null) {
@@ -704,7 +703,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         generator,
         gui,
         globalParams = {
-          compositeOperation: true
+          compositeOperation: true,
         };
 
       (function init() {
@@ -713,31 +712,57 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         generator = new Generator({
           x: canvas.width / 2,
-          y: canvas.height / 2
+          y: canvas.height / 2,
         });
 
         gui = new dat.GUI();
         var folder_0 = gui.addFolder('Global');
         folder_0.open();
-        folder_0.add(globalParams, 'compositeOperation').onFinishChange(refresh);
+        folder_0
+          .add(globalParams, 'compositeOperation')
+          .onFinishChange(refresh);
 
         var folder_1 = gui.addFolder('Generator');
         folder_1.open();
-        folder_1.add(generator, 'particleCount', 1, 5000).step(10).onFinishChange(refresh);
-        folder_1.add(generator, 'initialDistance', -100, 100).step(10).onFinishChange(refresh);
-        folder_1.add(generator, 'distanceThreshold', 0, 1000).step(10).onFinishChange(refresh);
+        folder_1
+          .add(generator, 'particleCount', 1, 5000)
+          .step(10)
+          .onFinishChange(refresh);
+        folder_1
+          .add(generator, 'initialDistance', -100, 100)
+          .step(10)
+          .onFinishChange(refresh);
+        folder_1
+          .add(generator, 'distanceThreshold', 0, 1000)
+          .step(10)
+          .onFinishChange(refresh);
         folder_1.add(generator, 'seed_1', 0, 5).onFinishChange(refresh);
         folder_1.add(generator, 'seed_2', 0, 5).onFinishChange(refresh);
-        folder_1.add(generator, 'perlinAmp', 0, 100).step(1).onFinishChange(refresh);
+        folder_1
+          .add(generator, 'perlinAmp', 0, 100)
+          .step(1)
+          .onFinishChange(refresh);
         folder_1.add(generator, 'perlinAmpIncrease').onFinishChange(refresh);
-        folder_1.add(generator, 'perlinIncreaseSpeed', 0, 10).onFinishChange(refresh);
+        folder_1
+          .add(generator, 'perlinIncreaseSpeed', 0, 10)
+          .onFinishChange(refresh);
 
         var folder_2 = gui.addFolder('Particles');
         folder_2.open();
-        folder_2.add(generator, 'thresholdVariation', 0, 500).step(1).onFinishChange(refresh);
-        folder_2.add(generator, 'particleSize', 1, 3).step(1).onFinishChange(refresh);
-        folder_2.add(generator, 'particleRotationSpeed', 0, 3).onFinishChange(refresh);
-        folder_2.add(generator, 'particleDistanceSpeed', 0, 3).onFinishChange(refresh);
+        folder_2
+          .add(generator, 'thresholdVariation', 0, 500)
+          .step(1)
+          .onFinishChange(refresh);
+        folder_2
+          .add(generator, 'particleSize', 1, 3)
+          .step(1)
+          .onFinishChange(refresh);
+        folder_2
+          .add(generator, 'particleRotationSpeed', 0, 3)
+          .onFinishChange(refresh);
+        folder_2
+          .add(generator, 'particleDistanceSpeed', 0, 3)
+          .onFinishChange(refresh);
 
         generator.populate();
 
@@ -752,7 +777,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
 
       function animate() {
-        ctx.fillStyle = "rgba(#1d1d1d,1)";
+        ctx.fillStyle = 'rgba(#1d1d1d,1)';
         generator.draw();
         requestAnimationFrame(animate);
       }

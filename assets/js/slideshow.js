@@ -30,7 +30,7 @@
     }
     return {
       x: posx,
-      y: posy
+      y: posy,
     };
   };
   // Gets a random integer.
@@ -133,7 +133,7 @@
   class Slide {
     constructor(el) {
       this.DOM = {
-        el: el
+        el: el,
       };
       // The image wrap element.
       this.DOM.imgWrap = this.DOM.el.querySelector('.slide__img-wrap');
@@ -186,7 +186,8 @@
             4: right bottom corner outside the viewport
             5: left side, for when the content is shown
             */
-      this.transforms = [{
+      this.transforms = [
+        {
           x: -1 * (winsize.width / 2 + this.width),
           y: -1 * (winsize.height / 2 + this.height),
           rotation: -30,
@@ -199,7 +200,7 @@
         {
           x: 0,
           y: 0,
-          rotation: 0
+          rotation: 0,
         },
         {
           x: winsize.width / 2 - this.width / 3,
@@ -285,11 +286,11 @@
       // Rotate the element from -15 to 15 degrees in both x and y axis.
       let t = {
           x: [-20, 20],
-          y: [-20, 20]
+          y: [-20, 20],
         },
         r = {
           x: [-15, 15],
-          y: [-15, 15]
+          y: [-15, 15],
         };
 
       const transforms = {
@@ -396,25 +397,28 @@
         TweenMax.to(this.DOM.imgWrap, 0.8, {
           ease: Power4.easeInOut,
           delay: settings.delay || 0,
-          startAt: settings.from !== undefined ?
-            {
-              x: this.transforms[settings.from + 2].x,
-              y: this.transforms[settings.from + 2].y,
-              rotationX: 0,
-              rotationY: 0,
-              rotationZ: this.transforms[settings.from + 2].rotation,
-            } :
-            {},
+          startAt:
+            settings.from !== undefined
+              ? {
+                  x: this.transforms[settings.from + 2].x,
+                  y: this.transforms[settings.from + 2].y,
+                  rotationX: 0,
+                  rotationY: 0,
+                  rotationZ: this.transforms[settings.from + 2].rotation,
+                }
+              : {},
           x: this.transforms[settings.position + 2].x,
           y: this.transforms[settings.position + 2].y,
           rotationX: 0,
           rotationY: 0,
           rotationZ: this.transforms[settings.position + 2].rotation,
-          onStart: settings.from !== undefined ?
-            () => TweenMax.set(this.DOM.imgWrap, {
-              opacity: 1
-            }) :
-            null,
+          onStart:
+            settings.from !== undefined
+              ? () =>
+                  TweenMax.set(this.DOM.imgWrap, {
+                    opacity: 1,
+                  })
+              : null,
           onComplete: resolve,
         });
 
@@ -432,30 +436,30 @@
       if (animation) {
         disassembleLetters(this.DOM.titleLetters).then(() =>
           TweenMax.set(this.DOM.texts.wrap, {
-            opacity: 0
+            opacity: 0,
           })
         );
         disassembleLetters(this.DOM.sideLetters).then(() =>
           TweenMax.set(this.DOM.texts.side, {
-            opacity: 0
+            opacity: 0,
           })
         );
       } else {
         TweenMax.set(this.DOM.texts.wrap, {
-          opacity: 0
+          opacity: 0,
         });
         TweenMax.set(this.DOM.texts.side, {
-          opacity: 0
+          opacity: 0,
         });
       }
     }
     // Shows the current slide´s texts.
     showTexts(animation = true) {
       TweenMax.set(this.DOM.texts.wrap, {
-        opacity: 1
+        opacity: 1,
       });
       TweenMax.set(this.DOM.texts.side, {
-        opacity: 1
+        opacity: 1,
       });
 
       if (animation) {
@@ -465,7 +469,7 @@
           ease: Elastic.easeOut.config(1, 0.5),
           startAt: {
             x: '-10%',
-            opacity: 0
+            opacity: 0,
           },
           x: '0%',
           opacity: 1,
@@ -478,7 +482,7 @@
   class Content {
     constructor(el) {
       this.DOM = {
-        el: el
+        el: el,
       };
       this.DOM.number = this.DOM.el.querySelector('.content__number');
       this.DOM.link = this.DOM.el.querySelector('.content__link');
@@ -506,12 +510,13 @@
           this.DOM.subtitle,
           this.DOM.text,
         ],
-        0.8, {
+        0.8,
+        {
           ease: Power4.easeOut,
           delay: 0.4,
           opacity: 1,
           startAt: {
-            y: 40
+            y: 40,
           },
           y: 0,
         },
@@ -531,7 +536,8 @@
           this.DOM.subtitle,
           this.DOM.text,
         ].reverse(),
-        0.3, {
+        0.3,
+        {
           ease: Power3.easeIn,
           opacity: 0,
           y: 10,
@@ -545,7 +551,7 @@
   class Slideshow {
     constructor(el) {
       this.DOM = {
-        el: el
+        el: el,
       };
       // The slides.
       this.slides = [];
@@ -632,15 +638,15 @@
       });
       // Move away right/left slides.
       this.prevSlide.moveToPosition({
-        position: -2
+        position: -2,
       });
       this.nextSlide.moveToPosition({
-        position: 2
+        position: 2,
       });
       // Position the current slide and reset its image scale value.
       this.currentSlide.moveToPosition({
         position: 3,
-        resetImageScale: true
+        resetImageScale: true,
       });
       // Show content and back arrow (to close the content).
       this.contents[this.current].show();
@@ -664,18 +670,20 @@
       });
       // Move in right/left slides.
       this.prevSlide.moveToPosition({
-        position: -1
+        position: -1,
       });
       this.nextSlide.moveToPosition({
-        position: 1
+        position: 1,
       });
       // Position the current slide.
-      this.currentSlide.moveToPosition({
-        position: 0
-      }).then(() => {
-        allowTilt = true;
-        this.isContentOpen = false;
-      });
+      this.currentSlide
+        .moveToPosition({
+          position: 0,
+        })
+        .then(() => {
+          allowTilt = true;
+          this.isContentOpen = false;
+        });
       // Show texts.
       this.currentSlide.showTexts();
     }
@@ -704,25 +712,25 @@
       allowTilt = false;
 
       const upcomingPos =
-        direction === 'next' ?
-        this.current < this.slidesTotal - 2 ?
-        this.current + 2 :
-        Math.abs(this.slidesTotal - 2 - this.current) :
-        this.current >= 2 ?
-        this.current - 2 :
-        Math.abs(this.slidesTotal - 2 + this.current);
+        direction === 'next'
+          ? this.current < this.slidesTotal - 2
+            ? this.current + 2
+            : Math.abs(this.slidesTotal - 2 - this.current)
+          : this.current >= 2
+          ? this.current - 2
+          : Math.abs(this.slidesTotal - 2 + this.current);
 
       this.upcomingSlide = this.slides[upcomingPos];
 
       // Update current.
       this.current =
-        direction === 'next' ?
-        this.current < this.slidesTotal - 1 ?
-        this.current + 1 :
-        0 :
-        this.current > 0 ?
-        this.current - 1 :
-        this.slidesTotal - 1;
+        direction === 'next'
+          ? this.current < this.slidesTotal - 1
+            ? this.current + 1
+            : 0
+          : this.current > 0
+          ? this.current - 1
+          : this.slidesTotal - 1;
 
       // Move slides (the previous, current, next and upcoming slide).
       this.prevSlide
@@ -784,7 +792,7 @@
   const calcWinsize = () =>
     (winsize = {
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
     });
   calcWinsize();
   window.addEventListener('resize', calcWinsize);
@@ -797,8 +805,9 @@
   // Preload all the images in the page..
   const loader = document.querySelector('.loader');
   imagesLoaded(
-    document.querySelectorAll('.slide__img'), {
-      background: true
+    document.querySelectorAll('.slide__img'),
+    {
+      background: true,
     },
     () => document.body.classList.remove('loading')
   );

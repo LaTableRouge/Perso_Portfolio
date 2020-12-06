@@ -80,8 +80,8 @@ h5{font-size:20px;margin:10px 0}h6{font-size:15px;margin:10px 0}ul{margin-top:0}
 .slide__number{display:block;font-size:2rem;font-weight:bold}.slide__number::before{content:'\2014';display:inline-block;margin:0 1rem 0 0}
 .slide__title,.slide__subtitle,.slide__side{display:none}.content{position:fixed;top:0;right:0;width:60%;height:calc(100% - 10rem);pointer-events:none;z-index:100}
 .content__item{position:absolute;top:0;right:0;width:100%;height:100%;padding:2vh 5vw;overflow:auto}
-.content__item--current{pointer-events:auto}.content__item--current ~ .content__close{pointer-events:auto}
-.content__close{position:absolute;top:1rem;left:-16rem;background:0;color:currentColor;border:0;margin:0;padding:0}
+.content__item--disabled{pointer-events:none;opacity:.5}.content__item--current{pointer-events:auto}
+.content__item--current ~ .content__close{pointer-events:auto}.content__close{position:absolute;top:1rem;left:-16rem;background:0;color:currentColor;border:0;margin:0;padding:0}
 .content__link{position:absolute;opacity:0;right:3rem;color:white;font-weight:bold;text-decoration:underline}
 .content__date{position:absolute;opacity:0;font-size:11px;left:7rem;top:1.1rem}.icon--longarrow{width:2rem}
 .content__close:focus{outline:0}.content__number{font-weight:bold}.content__number::before{content:'\2014';display:inline-block;margin:0 1rem 0 0}

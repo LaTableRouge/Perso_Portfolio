@@ -701,11 +701,14 @@ ul {
   height: 100%;
   padding: 2vh 5vw;
   overflow: auto;
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
 }
 
 .content__item--current {
   pointer-events: auto;
-
   ~ .content__close {
     pointer-events: auto;
   }

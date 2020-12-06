@@ -4015,6 +4015,11 @@ textarea {
   opacity: 1;
 }
 
+.carousel-swiper-beta .legend--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 .carousel-swiper-beta .slider-container .illustr img {
   width: 100%;
   display: block;

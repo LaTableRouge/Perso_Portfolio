@@ -5201,6 +5201,10 @@ textarea {
   position: relative;
 }
 
+.section:not(.section-home):not(.section-contact):not(.section-twoside) {
+  background: #000000;
+}
+
 .section-cover-half-left {
   position: relative;
   left: 0;
@@ -8374,10 +8378,6 @@ path#f3-l9 {
 
   .section {
     overflow: hidden;
-  }
-
-  .section:nth-child(2n) {
-    background: rgba(255, 255, 255, 0.05);
   }
 
   .section-title {

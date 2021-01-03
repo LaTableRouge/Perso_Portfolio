@@ -1,5 +1,8 @@
 .section {
   position: relative;
+  &:not(.section-home):not(.section-contact):not(.section-twoside) {
+    background: $black;
+  }
 }
 
 .section-cover-half-left {
@@ -271,7 +274,7 @@
 
 @include down-lg {
   .section:nth-child(2n) {
-    background: rgba(255, 255, 255, 0.05);
+    // background: rgba(255, 255, 255, 0.05);
   }
 }
 

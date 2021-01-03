@@ -571,7 +571,8 @@ textarea{min-height:96px}.form-control.shadow{-webkit-box-shadow:0 2px 2px rgba(
 .page-footer.scrolled .footer-left,.page-footer.scrolled .footer-right{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0;visibility:hidden}
 .page-main{min-height:100%}.body-page{background-color:#1d1d1d;color:#fff}.body-item{background-color:#1d1d1d;color:#fff}
 .body-page{position:relative}.body-page .cursor-ball{position:absolute;z-index:0;content:'';width:50vw;height:100vh;margin-left:-25vw;left:0;top:0;background:rgba(255,255,255,0.05);-webkit-transition:.05s ease-in-out;transition:.05s ease-in-out;-webkit-transform:translateX(0);transform:translateX(0)}
-.section{position:relative}.section-cover-half-left{position:relative;left:0;width:100%;top:0;height:100%;background:#1d1d1d;background-size:cover;background-position:center}
+.section{position:relative}.section:not(.section-home):not(.section-contact):not(.section-twoside){background:#000}
+.section-cover-half-left{position:relative;left:0;width:100%;top:0;height:100%;background:#1d1d1d;background-size:cover;background-position:center}
 .section-cover-half-left.mask-black:before{z-index:0;content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.2)}
 .section-cover-tier{min-height:120px;background:#000;margin-bottom:20px;-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out}
 .section-cover-full{position:absolute;left:0;width:100%;top:0;height:100%;background:#1d1d1d;background-size:cover;background-position:center}
@@ -886,8 +887,7 @@ path#f3-l9{-webkit-animation-name:typing-f3-l9;animation-name:typing-f3-l9}#paw-
 .page-header-alpha .all-menu-wrapper .navbar-nav .nav-item a{text-transform:uppercase;font-size:24px}
 .page-header-alpha .all-menu-wrapper .navbar-nav .nav-item a.active{color:currentColor}
 .page-header-alpha .all-menu-wrapper .navbar-nav .nav-item a.hover{color:#3346d1}
-.section{overflow:hidden}.section:nth-child(2n){background:rgba(255,255,255,0.05)}
-.section-title{max-height:170px;height:170px}.fp-scrollable{height:auto !important}
+.section{overflow:hidden}.section-title{max-height:170px;height:170px}.fp-scrollable{height:auto !important}
 .fp-scroller{height:auto !important}.testimonials .swiper-container.carousel-swiper-beta.slider-container{margin-left:30px}
 .testimonials .items-navigation{margin-right:65px}#itempage{margin:0 2%}}@media screen and (max-width:1024px){.section-title .title-bg{font-size:5rem !important;left:55px !important}
 #fp-nav.right{left:40px !important}}@media(max-width:1024px){.mb-32{margin-bottom:32px}

@@ -1,7 +1,7 @@
 {
-  "name": "sandbox",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "sandbox",
+  "description": "portfolio",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,12 +10,12 @@
     "type": "git",
     "url": "ssh://git@192.168.1.120/~/[ProjectRepo].git"
   },
-  "author": "Glanum",
+  "author": "MLNOP",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.11.0",
-    "@babel/preset-env": "^7.11.0",
-    "browser-sync": "^2.26.12",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "browser-sync": "^2.26.13",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -35,6 +35,7 @@
     "gulp-strip-debug": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp4-run-sequence": "^1.0.1",
+    "gutil": "^1.6.4",
     "node-sass": "^4.14.0",
     "run-sequence": "^2.2.1",
     "vinyl-ftp": "^0.6.1"
